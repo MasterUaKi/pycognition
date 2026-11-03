@@ -1,0 +1,12 @@
+run_index,task_id,prompt,payload,track_used,status,latency_ms,prompt_tokens,completion_tokens,total_tokens,crystallization_triggered,crystallization_latency_ms,crystallization_success,error_message,timestamp
+1,b738d6a3-a176-4788-9581-19aba460f40e,calculate hypotenuse right triangle,"{""a"": 3.0, ""b"": 4.0}",system_2,success,366.22,85,35,120,True,1138.62,True,,2026-11-03T12:43:11.768260+00:00
+2,61322404-3e9d-4138-a506-d8238b52bdf2,calculate hypotenuse right triangle,"{""a"": 5.0, ""b"": 12.0}",system_1,success,4.58,0,0,0,False,0.0,False,,2026-11-03T12:43:11.774121+00:00
+3,e4da37fa-0521-4445-9172-3692b008ffec,calculate hypotenuse right triangle,"{""a"": 8.0, ""b"": 15.0}",system_1,success,0.37,0,0,0,False,0.0,False,,2026-11-03T12:43:11.774785+00:00
+4,0efd8320-0813-4cf0-b706-0949c3107220,calculate hypotenuse right triangle,"{""a"": 7.0, ""b"": 24.0}",system_1,success,0.26,0,0,0,False,0.0,False,,2026-11-03T12:43:11.775538+00:00
+5,7d3b46d6-523e-46d0-bfcc-04a225bd3795,convert temperature from celsius to fahrenheit,"{""celsius"": 0.0}",system_2,success,351.72,85,35,120,True,908.57,True,,2026-11-03T12:43:13.036295+00:00
+6,efe524e1-d2f9-4232-92d6-962f57aafc74,convert temperature from celsius to fahrenheit,"{""celsius"": 100.0}",system_1,success,0.33,0,0,0,False,0.0,False,,2026-11-03T12:43:13.037586+00:00
+7,7de11e3f-d676-43a1-8be7-d6c142c774db,convert temperature from celsius to fahrenheit,"{""celsius"": -40.0}",system_1,success,0.44,0,0,0,False,0.0,False,,2026-11-03T12:43:13.038388+00:00
+8,6c43cae3-700b-487f-8621-d90ec0411c58,calculate nth fibonacci number,"{""n"": 10}",system_2,success,361.69,85,35,120,True,1114.51,True,,2026-11-03T12:43:14.515106+00:00
+9,295bd3c2-742d-48bb-b2aa-9d34eee9225d,calculate nth fibonacci number,"{""n"": 15}",system_1,success,0.58,0,0,0,False,0.0,False,,2026-11-03T12:43:14.517621+00:00
+10,c671a30a-9787-4146-b27c-b3323e5126e5,calculate nth fibonacci number,"{""n"": 20}",system_1,success,0.38,0,0,0,False,0.0,False,,2026-11-03T12:43:14.518775+00:00
+11,57e74fe5-31e8-4321-852c-4922246a3507,Explain the architectural trade-offs between amortized inference and on-demand LLM reasoning,{},system_2,success,354.1,85,35,120,False,0.0,False,,2026-11-03T12:43:14.873345+00:00

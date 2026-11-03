@@ -1,4 +1,4 @@
-# Version: 0.1.0 | Release Date: 2026-11-02
+# Version: 0.1.1 | Release Date: 2026-11-03
 from enum import Enum
 import json
 import os
@@ -90,7 +90,7 @@ class LLMDeliberator(BaseSystem2):
 
         user_content = task.prompt
         if task.payload:
-            payload_str = json.dumps(task.payload, ensure_ascii=False, indent=2)
+            payload_str = json.dumps(task.payload, ensure_ascii=False, indent=2, default=str)
             user_content = f"{task.prompt}\n\nВходные данные:\n{payload_str}"
 
         messages: List[Dict[str, str]] = [
@@ -211,7 +211,6 @@ class LLMDeliberator(BaseSystem2):
             data = response.json()
             raw_content = data["choices"][0]["message"]["content"].strip()
 
-            # Извлечение JSON из markdown блоков (если модель обернула ответ в ```json)
             json_match = re.search(r"\{.*\}", raw_content, re.DOTALL)
             if not json_match:
                 return None
