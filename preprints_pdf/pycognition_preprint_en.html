@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pycognition: Preprint (English)</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 22mm 20mm 25mm 20mm;
+      @top-left {
+        content: "pycognition: Dual-Process Cognitive Architecture";
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8.5pt;
+        font-style: italic;
+        color: #444444;
+        border-bottom: 0.5pt solid #888888;
+        padding-bottom: 3px;
+      }
+      @top-right {
+        content: "O. Riabtsev (2026)";
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 8.5pt;
+        color: #444444;
+        border-bottom: 0.5pt solid #888888;
+        padding-bottom: 3px;
+      }
+      @bottom-center {
+        content: counter(page);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 9.5pt;
+      }
+    }
+    
+    body {
+      font-family: 'Times New Roman', Times, Georgia, serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #000000;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1.doc-title {
+      font-size: 16pt;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10pt;
+      margin-bottom: 12pt;
+      line-height: 1.3;
+      page-break-after: avoid;
+    }
+    
+    .author-block {
+      text-align: center;
+      font-size: 10pt;
+      margin-bottom: 22pt;
+      line-height: 1.4;
+      page-break-after: avoid;
+    }
+    
+    .author-name {
+      font-weight: bold;
+      font-size: 10.5pt;
+    }
+    
+    .abstract-box {
+      margin: 15pt 0 20pt 0;
+      padding: 0 10pt;
+      font-size: 10pt;
+    }
+    
+    .abstract-heading {
+      font-weight: bold;
+      font-size: 10.5pt;
+      margin-bottom: 4pt;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    
+    h1.sec-title {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 22pt;
+      margin-bottom: 8pt;
+      border: none;
+      padding: 0;
+      text-align: left;
+      page-break-after: avoid;
+    }
+    
+    h2 {
+      font-size: 11pt;
+      font-weight: bold;
+      margin-top: 14pt;
+      margin-bottom: 5pt;
+      page-break-after: avoid;
+    }
+    
+    h3 {
+      font-size: 10.5pt;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: 11pt;
+      margin-bottom: 4pt;
+      page-break-after: avoid;
+    }
+    
+    p {
+      text-align: justify;
+      margin-top: 0;
+      margin-bottom: 6pt;
+      text-indent: 1.5em;
+    }
+    
+    p.no-indent {
+      text-indent: 0;
+    }
+    
+    ul, ol {
+      margin-top: 3pt;
+      margin-bottom: 8pt;
+      padding-left: 2em;
+    }
+    
+    li {
+      margin-bottom: 3pt;
+      text-align: justify;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14pt 0;
+      font-size: 9pt;
+      border-top: 1.5pt solid #000000;
+      border-bottom: 1.5pt solid #000000;
+      page-break-inside: avoid;
+    }
+    
+    th, td {
+      padding: 4.5pt 6pt;
+      vertical-align: top;
+      text-align: left;
+      border: none;
+    }
+    
+    th {
+      font-weight: bold;
+      border-bottom: 1pt solid #000000;
+    }
+    
+    .table-caption {
+      font-size: 9.5pt;
+      font-weight: bold;
+      margin-top: 12pt;
+      margin-bottom: 4pt;
+      text-indent: 0;
+      text-align: center;
+      page-break-after: avoid;
+    }
+    
+    .math-display {
+      margin: 10pt 0;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+    
+    math {
+      font-family: 'Times New Roman', 'Cambria Math', serif;
+    }
+    
+    .ref-item {
+      margin-bottom: 6pt;
+      text-align: justify;
+      font-size: 9pt;
+      padding-left: 2.2em;
+      text-indent: -2.2em;
+      line-height: 1.35;
+    }
+    
+    .ref-item a {
+      color: #000000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div class="paper-section" id="section-en">
+    <h1 class="doc-title">pycognition: A Dual-Process Cognitive Architecture Integrating Deterministic Procedural Execution and Deliberative LLM Synthesis</h1>
+    
+    <div class="author-block">
+      <span class="author-name">Oleh Riabtsev</span><br>
+      Referat Forschung, Nachwuchsförderung und Transfer (RFNT), Universität Vechta, Germany<br>
+      ORCID: 0009-0003-7848-6418 | Software License: LGPL-3.0-or-later
+    </div>
+
+    <div class="abstract-box">
+      <div class="abstract-heading">Abstract</div>
+      <p class="no-indent">
+        This paper introduces <strong>pycognition</strong>, an open-source neurosymbolic framework formalizing dual-process cognitive dynamics for autonomous software agents. Contemporary agent frameworks uniformly route deterministic and repetitive sub-tasks through stochastic foundation model APIs, incurring substantial latency, financial overhead, and execution drift. pycognition addresses this efficiency gap via a segregated execution topology: an ultra-fast procedural tier (System 1) executing validated Python scripts, and a deliberative tier (System 2) orchestrating frontier LLM inference. The Skill Crystallization pipeline compiles verified reasoning traces into strongly typed modules, verified via Abstract Syntax Tree (AST) safety inspection and sandboxed unit testing via <code>pytest</code>. An empirical trial across 100 heterogeneous workloads confirmed a rigorous three-tier performance model. Operating akin to an adaptive JIT compiler, the architecture explicitly accounts for script development latency (mean 7,192.20 ms). The per-skill break-even point is reached at 4 invocations (ideal) and 5 invocations (accounting for the 36.2% sandbox rejection overhead), followed by an asymptotic speedup of 11,326.7x. System-wide, algorithmic response time decreased by 44.7% (155.46 s vs. 281.13 s), while cumulative token expenditure dropped immediately by 38.0%, scaling to 71.4% procedural coverage in the final quartile.
+      </p>
+      <p class="no-indent"><em>Keywords:</em> Cognitive Architectures, Autonomous Agents, Dual-Process Theory, Program Synthesis, AST Validation, Amortized Inference, JIT Compilation, Break-Even Point, pycognition.</p>
+    </div>
+
+    <h1 class="sec-title">1. Introduction</h1>
+    <p>
+      The deployment of LLM agents across enterprise environments has exposed a fundamental inefficiency between natural language generative flexibility and deterministic algorithmic execution. Standard paradigms (ReAct [6], Plan-and-Solve [9], AutoGen [10]) utilize stochastic autoregressive inference as an all-purpose runtime. Algorithmic transformations, log parsing, and numerical calculations are repeatedly offloaded to cloud model APIs alongside strategic planning, incurring linear and quadratic token costs, round-trip latencies of up to 5,000 ms, and non-deterministic regressions.
+    </p>
+    <p>
+      Dual-Process Theory [1], [2] resolves this trade-off: <strong>System 1</strong> governs rapid procedural routines, while <strong>System 2</strong> allocates intensive deliberation to novel domains. The <strong>pycognition</strong> framework transfers this principle to software agents as an adaptive JIT compiler: encountering new task classes, the agent invests System 2 resources into synthesizing deterministic Python modules, verifies their safety, and registers them into procedural memory.
+    </p>
+
+    <h1 class="sec-title">2. Background and Related Work</h1>
+    <p>
+      The partition between declarative representations and procedural rules has historical foundations in ACT-R [3] and Soar [4]. Amortized inference [15] established the validity of replacing costly iterative search with cached evaluation operators. Foundation models (Codex [12], DeepSeek-Coder [13]) and agents like Voyager [11] demonstrated skill accumulation, but lacked deterministic AST sanitization, automated unit test generation [14], and rigorous multi-tier break-even modeling.
+    </p>
+
+    <h1 class="sec-title">3. Proposed Methodology and Architecture</h1>
+    <p>
+      An incoming computational task <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mo stretchy="false">&#x27E8;</mo><mtext>id</mtext><mo>,</mo><mi>p</mi><mo>,</mo><mi>x</mi><mo>,</mo><mi>&#x03BC;</mi><mo stretchy="false">&#x27E9;</mo></math> is arbitrated via <code>MetaArbiter</code> maximizing expected utility <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>U</mi><mo stretchy="false">(</mo><mi>a</mi><mo>&#x2223;</mo><mi>T</mi><mo stretchy="false">)</mo></math> based on vector similarity <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x03B3;</mi><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi mathvariant="normal">&#x03A3;</mi><mo stretchy="false">)</mo></math> with threshold <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x03B8;</mi><mo>=</mo><mn>0.55</mn></math>. The crystallization operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#x03A8;</mi></math> synthesizes verified subroutines guarded by <code>ASTSecurityValidator</code> and an isolated subprocess <code>pytest</code> sandbox (<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mo>=</mo><mn>15</mn><mtext>&#160;s</mtext></math>).
+    </p>
+
+    <h1 class="sec-title">4. Implementation and Empirical Evaluation</h1>
+    <h2>4.1. Three-Tier Latency and Break-Even Modeling (N = 100)</h2>
+    <ul>
+      <li><strong>Tier 1. Marginal Latency and Asymptotic Acceleration:</strong> A compiled System 1 routine executes in <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mover><mi>L</mi><mo accent="true">&#x2015;</mo></mover><msub><mi mathvariant="script">S</mi><mn>1</mn></msub></msub><mo>=</mo><mn>0.292</mn><mtext>&#160;ms</mtext></math>. A baseline algorithmic LLM call averages <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mtext>base</mtext></msub><mo>=</mo><mn>3&#160;307.41</mn><mtext>&#160;ms</mtext></math>. The marginal speedup is <strong>11,326.7x</strong> (19,103.9x across all System 2 calls).</li>
+      <li><strong>Tier 2. Script Development Costs and Per-Skill Break-Even:</strong> Synthesis and sandbox testing consume an average of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mtext>cryst</mtext></msub><mo>=</mo><mn>7&#160;192.20</mn><mtext>&#160;ms</mtext></math> (cold-start total: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10&#160;499.60</mn><mtext>&#160;ms</mtext></math>).
+      <br>The amortization condition across <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math> invocations is:
+      <div class="math-display">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mi>k</mi><mo>&#x2265;</mo><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>L</mi><mtext>cryst</mtext></msub><mo>&#x2212;</mo><msub><mover><mi>L</mi><mo accent="true">&#x2015;</mo></mover><msub><mi mathvariant="script">S</mi><mn>1</mn></msub></msub></mrow><mrow><msub><mi>L</mi><mtext>base</mtext></msub><mo>&#x2212;</mo><msub><mover><mi>L</mi><mo accent="true">&#x2015;</mo></mover><msub><mi mathvariant="script">S</mi><mn>1</mn></msub></msub></mrow></mfrac>
+          <mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mn>7&#160;192.20</mn><mo>&#x2212;</mo><mn>0.292</mn></mrow><mrow><mn>3&#160;307.41</mn><mo>&#x2212;</mo><mn>0.292</mn></mrow></mfrac>
+          <mo>&#x2248;</mo><mn>3.175</mn><mo>&#x27F9;</mo><mi mathvariant="bold">k</mi><mo mathvariant="bold">=</mo><mn mathvariant="bold">4</mn><mtext mathvariant="bold">&#160;calls</mtext>
+        </math>
+      </div>
+      Accounting for the 36.2% sandbox rejection overhead (<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>L</mi><mtext>cryst,eff</mtext></msub><mo>=</mo><mn>11&#160;267.78</mn><mtext>&#160;ms</mtext></math>), effective break-even occurs at <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>k</mi><mtext>eff</mtext></msub><mo>&#x2265;</mo><mn>4.407</mn><mo>&#x27F9;</mo><mi mathvariant="bold">k</mi><mo mathvariant="bold">=</mo><mn mathvariant="bold">5</mn><mtext mathvariant="bold">&#160;calls</mtext></math>.
+      <br>Effective speedup progression: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.31</mn><mo>&#xD7;</mo></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.63</mn><mo>&#xD7;</mo></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1.26</mn><mo>&#xD7;</mo></math> (break-even reached); <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3.15</mn><mo>&#xD7;</mo></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>50</mn><mo stretchy="false">)</mo><mo>=</mo><mn>15.73</mn><mo>&#xD7;</mo></math>; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo><mo>=</mo><mn>31.41</mn><mo>&#xD7;</mo></math>.</li>
+      <li><strong>Tier 3. Workload-Level Progression across 100 Tasks:</strong>
+      <br>Baseline uncompiled LLM time: 471.66 s (281.13 s algorithmic). In pycognition, asynchronous task response time dropped to <strong>155.46 s (1.81x speedup, -44.7% execution time)</strong>. Synchronous wall-clock time including 47 crystallization cycles (338.03 s) totaled 493.49 s on algorithmic tasks. In Quartile 4, synchronous wall-clock speedup reached <strong>0.96x (2.84x execution speedup)</strong>, with full workload break-even horizon converging at <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>N</mi><mo>*</mo></msup><mo>&#x2248;</mo><mn mathvariant="bold">207</mn><mtext mathvariant="bold">&#160;tasks</mtext></math>.</li>
+    </ul>
+
+    <div class="table-caption">Table 2. Realistic Empirical Performance Matrix (N = 100 Tasks)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Performance Metric</th>
+          <th>Pure Frontier LLM Baseline</th>
+          <th>pycognition Dual-Process</th>
+          <th>Realistic Empirical Delta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marginal Execution Latency</td>
+          <td>3,307.41 ms (algo)</td>
+          <td>0.292 ms (System 1)</td>
+          <td>Sub-millisecond execution</td>
+        </tr>
+        <tr>
+          <td>Script Synthesis &amp; Testing Latency</td>
+          <td>0 ms</td>
+          <td>7,192.20 ms</td>
+          <td>JIT compilation investment</td>
+        </tr>
+        <tr>
+          <td>Total Cold-Start Latency</td>
+          <td>3,307.41 ms</td>
+          <td>10,499.60 ms</td>
+          <td>Initial learning overhead (0.31x)</td>
+        </tr>
+        <tr>
+          <td>Per-Skill Break-Even Point</td>
+          <td>N/A</td>
+          <td>k = 4 (ideal) / k = 5 (effective)</td>
+          <td>Amortized after 4–5 calls</td>
+        </tr>
+        <tr>
+          <td>Marginal Speedup Factor</td>
+          <td>1.0x</td>
+          <td>11,326.7x (algo) / 19,103.9x (overall)</td>
+          <td>Asymptotic performance limit</td>
+        </tr>
+        <tr>
+          <td>85 Algorithmic Tasks Execution Time</td>
+          <td>281.13 s</td>
+          <td>155.46 s (asynchronous)</td>
+          <td>1.81x speedup (-44.7% time)</td>
+        </tr>
+        <tr>
+          <td>Synchronous Wall-Clock Time</td>
+          <td>281.13 s</td>
+          <td>493.49 s</td>
+          <td>Learning phase at N=100</td>
+        </tr>
+        <tr>
+          <td>System Break-Even Horizon N*</td>
+          <td>N/A</td>
+          <td>N* ≈ 207 tasks</td>
+          <td>Full cluster amortization</td>
+        </tr>
+        <tr>
+          <td>Token Expenditure (100 Tasks)</td>
+          <td>87,061 tokens</td>
+          <td>53,978 tokens</td>
+          <td>-38.0% immediate reduction</td>
+        </tr>
+        <tr>
+          <td>System 1 Share in Quartile 4 (Q4)</td>
+          <td>0.0%</td>
+          <td>71.4% (15 of 21 algorithmic)</td>
+          <td>Sustained consolidation</td>
+        </tr>
+        <tr>
+          <td>Crystallization Sandbox Yield</td>
+          <td>N/A</td>
+          <td>63.8% (30 passed / 17 blocked)</td>
+          <td>100% System 1 memory fidelity</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1 class="sec-title">5. Discussion and Limitations</h1>
+    <p>
+      Filtering 36.2% of candidate subroutines prevented silent regressions caused by degrees-of-freedom mismatches in variance (6 z-score cases), boundary flaws in IPv4 parsing (4 cases), and floating-point rounding errors. Explicitly accounting for synthesis latency (7.19 s) provides an honest engineering baseline, indicating that compilation should operate as an asynchronous background task. Lexical TF matching exhibited synonym fragmentation and cross-lingual dilution, establishing the requirement for dense multilingual embeddings.
+    </p>
+
+    <h1 class="sec-title">6. Conclusion and Future Work</h1>
+    <p>
+      <strong>pycognition</strong> demonstrates the empirical viability of JIT compilation for cognitive agents. Synthesis investments amortize within 4–5 task repetitions, achieving an 11,326.7x marginal speedup, a 44.7% execution time reduction, and immediate 38.0% token savings. Future work focuses on self-healing reflection loops and dense embedding deduplication.
+    </p>
+
+    <h1 class="sec-title">7. References</h1>
+    <div class="ref-item">[1] D. Kahneman, <em>Thinking, Fast and Slow</em>. New York, NY, USA: Farrar, Straus and Giroux, 2011.</div>
+    <div class="ref-item">[2] J. S. B. T. Evans and K. E. Stanovich, "Dual-process theories of higher cognition: Advancing the debate," <em>Perspectives on Psychological Science</em>, 2013.</div>
+    <div class="ref-item">[3] J. R. Anderson, <em>How Can the Human Mind Occur in the Physical Universe?</em> Oxford University Press, 2007.</div>
+    <div class="ref-item">[6] S. Yao et al., "ReAct: Synergizing reasoning and acting in language models," in <em>Proc. ICLR</em>, 2023.</div>
+    <div class="ref-item">[8] T. Schick et al., "Toolformer: Language models can teach themselves to use tools," in <em>Proc. NeurIPS</em>, 2023.</div>
+    <div class="ref-item">[11] G. Wang et al., "Voyager: An open-ended embodied agent with large language models," in <em>Proc. NeurIPS</em>, 2023.</div>
+    <div class="ref-item">[15] S. J. Gershman and N. D. Goodman, "Amortized inference in probabilistic reasoning," in <em>Proc. CogSci</em>, 2014.</div>
+  </div>
+</body>
+</html>
