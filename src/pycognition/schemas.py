@@ -1,7 +1,7 @@
-# Version: 0.1.0 | Release Date: 2026-11-02
+# Version: 0.2.0 | Release Date: 2026-11-09
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 import uuid
 from pydantic import BaseModel, Field
 
@@ -17,6 +17,13 @@ class ExecutionStatus(str, Enum):
     SUCCESS = "success"
     FAILURE = "failure"
     FALLBACK_REQUIRED = "fallback_required"
+
+
+class SkillCapability(str, Enum):
+    """Профиль прав и среды исполнения процедурного навыка."""
+    COMPUTATIONAL = "computational"          # Чистые вычисления и алгоритмы без I/O (изоляция первой статьи)
+    DATA_EXTRACTOR = "data_extractor"        # Парсинг структур данных (HTML, XML, JSON, Text)
+    NETWORK_CONNECTOR = "network_connector"  # Сетевые I/O-коннекторы с контролем белого списка доменов
 
 
 class Task(BaseModel):
@@ -38,6 +45,14 @@ class SkillSignature(BaseModel):
     """Формальное описание интерфейса процедурного навыка."""
     name: str = Field(..., description="Уникальный идентификатор навыка")
     description: str = Field(..., description="Семантическое назначение скрипта")
+    capability: SkillCapability = Field(
+        default=SkillCapability.COMPUTATIONAL,
+        description="Профиль безопасности и среды исполнения",
+    )
+    allowed_domains: List[str] = Field(
+        default_factory=list,
+        description="Белый список разрешенных сетевых доменов для коннекторов",
+    )
     parameters_schema: Dict[str, Any] = Field(
         default_factory=dict,
         description="JSON-схема входных аргументов",
@@ -46,7 +61,7 @@ class SkillSignature(BaseModel):
         default_factory=dict,
         description="JSON-схема возвращаемого результата",
     )
-    version: str = "0.1.0"
+    version: str = "0.2.0"
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 

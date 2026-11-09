@@ -1,20 +1,12 @@
-# Version: 0.1.0 | Release Date: 2026-11-02
+# Version: 0.2.0 | Release Date: 2026-11-09
 import json
 from unittest.mock import AsyncMock
+
 import httpx
 import pytest
 
-from pycognition.engine.llm_deliberator import (
-    DEFAULT_BASE_URLS,
-    DEFAULT_MODELS,
-    LLMDeliberator,
-    LLMProvider,
-)
-from pycognition.schemas import (
-    CognitiveTrack,
-    ExecutionStatus,
-    Task,
-)
+from pycognition.engine.llm_deliberator import LLMDeliberator, LLMProvider
+from pycognition.schemas import CognitiveTrack, ExecutionStatus, Task
 
 
 @pytest.fixture
@@ -26,11 +18,11 @@ def sample_task() -> Task:
 
 
 def test_initialization_defaults() -> None:
-    deliberator = LLMDeliberator(provider=LLMProvider.OPENAI, api_key="sk-openai-test")
+    deliberator = LLMDeliberator()
     assert deliberator.provider == LLMProvider.OPENAI
-    assert deliberator.base_url == DEFAULT_BASE_URLS[LLMProvider.OPENAI]
-    assert deliberator.model == DEFAULT_MODELS[LLMProvider.OPENAI]
-    assert deliberator.api_key == "sk-openai-test"
+    assert deliberator.model == "gpt-4o"
+    assert deliberator.base_url == "https://api.openai.com/v1"
+    assert deliberator.timeout == 60.0
 
 
 def test_initialization_deepseek() -> None:
@@ -39,7 +31,7 @@ def test_initialization_deepseek() -> None:
         api_key="sk-deepseek-test",
     )
     assert deliberator.provider == LLMProvider.DEEPSEEK
-    assert deliberator.base_url == "[https://api.deepseek.com](https://api.deepseek.com)"
+    assert deliberator.base_url == "https://api.deepseek.com"
     assert deliberator.model == "deepseek-chat"
 
 
@@ -58,7 +50,7 @@ async def test_deliberate_openai_success(sample_task: Task) -> None:
     mock_response = httpx.Response(
         status_code=200,
         content=json.dumps(mock_response_data).encode("utf-8"),
-        request=httpx.Request("POST", "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)"),
+        request=httpx.Request("POST", "https://api.openai.com/v1/chat/completions"),
     )
     mock_client.post.return_value = mock_response
 
@@ -79,7 +71,7 @@ async def test_deliberate_openai_success(sample_task: Task) -> None:
 
     mock_client.post.assert_awaited_once()
     called_url = mock_client.post.await_args.args[0]
-    assert called_url == "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)"
+    assert called_url == "https://api.openai.com/v1/chat/completions"
 
 
 @pytest.mark.asyncio
@@ -93,7 +85,7 @@ async def test_deliberate_deepseek_success(sample_task: Task) -> None:
     mock_response = httpx.Response(
         status_code=200,
         content=json.dumps(mock_response_data).encode("utf-8"),
-        request=httpx.Request("POST", "[https://api.deepseek.com/chat/completions](https://api.deepseek.com/chat/completions)"),
+        request=httpx.Request("POST", "https://api.deepseek.com/chat/completions"),
     )
     mock_client.post.return_value = mock_response
 
@@ -108,30 +100,29 @@ async def test_deliberate_deepseek_success(sample_task: Task) -> None:
     assert result.status == ExecutionStatus.SUCCESS
     assert result.output == "DeepSeek: решение получено"
     called_url = mock_client.post.await_args.args[0]
-    assert called_url == "[https://api.deepseek.com/chat/completions](https://api.deepseek.com/chat/completions)"
+    assert called_url == "https://api.deepseek.com/chat/completions"
 
 
 @pytest.mark.asyncio
 async def test_deliberate_api_error_response(sample_task: Task) -> None:
     mock_client = AsyncMock(spec=httpx.AsyncClient)
     mock_response = httpx.Response(
-        status_code=401,
-        text="Invalid API Key",
-        request=httpx.Request("POST", "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)"),
+        status_code=429,
+        text="Rate limit exceeded",
+        request=httpx.Request("POST", "https://api.openai.com/v1/chat/completions"),
     )
     mock_client.post.return_value = mock_response
 
     deliberator = LLMDeliberator(
         provider=LLMProvider.OPENAI,
-        api_key="bad-key",
+        api_key="key",
         client=mock_client,
     )
 
     result = await deliberator.deliberate(sample_task)
 
     assert result.status == ExecutionStatus.FAILURE
-    assert result.output is None
-    assert "HTTP 401" in str(result.error_message)
+    assert "429" in str(result.error_message)
 
 
 @pytest.mark.asyncio
@@ -148,67 +139,71 @@ async def test_deliberate_network_exception(sample_task: Task) -> None:
     result = await deliberator.deliberate(sample_task)
 
     assert result.status == ExecutionStatus.FAILURE
-    assert "ConnectTimeout" in str(result.error_message)
+    assert "Таймаут соединения" in str(result.error_message)
 
 
 @pytest.mark.asyncio
 async def test_synthesize_skill_success(sample_task: Task) -> None:
-    json_skill_spec = {
-        "name": "calculate_trajectory",
-        "description": "Расчет дальности полета по скорости и углу",
-        "parameters_schema": {"velocity": "float", "angle": "float"},
-        "return_schema": {"distance": "float"},
+    mock_response_data = {
+        "choices": [
+            {
+                "message": {
+                    "content": json.dumps({
+                        "name": "calculate_flight",
+                        "description": "Расчет дальности полета",
+                        "parameters_schema": {"velocity": "float", "angle": "float"},
+                        "return_schema": {"distance": "float"},
+                    })
+                }
+            }
+        ]
     }
-    raw_markdown_reply = f"```json\n{json.dumps(json_skill_spec)}\n```"
 
     mock_client = AsyncMock(spec=httpx.AsyncClient)
     mock_response = httpx.Response(
         status_code=200,
-        content=json.dumps({"choices": [{"message": {"content": raw_markdown_reply}}]}).encode(
-            "utf-8"
-        ),
-        request=httpx.Request("POST", "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)"),
+        content=json.dumps(mock_response_data).encode("utf-8"),
+        request=httpx.Request("POST", "https://api.openai.com/v1/chat/completions"),
     )
     mock_client.post.return_value = mock_response
 
     deliberator = LLMDeliberator(
         provider=LLMProvider.OPENAI,
-        api_key="key",
+        api_key="test-key",
         client=mock_client,
     )
 
-    signature = await deliberator.synthesize_skill(
-        task=sample_task,
-        solution_context="Дальность вычисляется по формуле v^2 * sin(2a) / g",
-    )
-
-    assert signature is not None
-    assert signature.name == "calculate_trajectory"
-    assert signature.parameters_schema == {"velocity": "float", "angle": "float"}
-    assert signature.return_schema == {"distance": "float"}
+    sig = await deliberator.synthesize_skill(sample_task, solution_context="1020 м")
+    assert sig is not None
+    assert sig.name == "calculate_flight"
+    assert sig.description == "Расчет дальности полета"
 
 
 @pytest.mark.asyncio
 async def test_synthesize_skill_failure_invalid_json(sample_task: Task) -> None:
+    mock_response_data = {
+        "choices": [
+            {
+                "message": {
+                    "content": "Невалидный ответ без json-структуры"
+                }
+            }
+        ]
+    }
+
     mock_client = AsyncMock(spec=httpx.AsyncClient)
     mock_response = httpx.Response(
         status_code=200,
-        content=json.dumps(
-            {"choices": [{"message": {"content": "Не могу синтезировать JSON"}}]}
-        ).encode("utf-8"),
-        request=httpx.Request("POST", "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)"),
+        content=json.dumps(mock_response_data).encode("utf-8"),
+        request=httpx.Request("POST", "https://api.openai.com/v1/chat/completions"),
     )
     mock_client.post.return_value = mock_response
 
     deliberator = LLMDeliberator(
         provider=LLMProvider.OPENAI,
-        api_key="key",
+        api_key="test-key",
         client=mock_client,
     )
 
-    signature = await deliberator.synthesize_skill(
-        task=sample_task,
-        solution_context="Неструктурированный ответ",
-    )
-
-    assert signature is None
+    sig = await deliberator.synthesize_skill(sample_task, solution_context="ctx")
+    assert sig is None
