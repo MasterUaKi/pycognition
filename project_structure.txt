@@ -1,0 +1,613 @@
+Корень проекта: C:\Entwiklung\pycognition
+
+📄 .gitignore (1.4 KB)
+📄 LICENSE (26.4 KB)
+📄 README.md (17.0 KB)
+📄 Textdokument (neu).txt (0 B)
+📄 export_preprints.py (16.1 KB)
+📄 push_github.bat (173 B)
+📄 pyproject.toml (1.7 KB)
+📁 benchmarks/
+  📄 benchmark_suite.py (20.1 KB)
+  📄 plot_results.py (6.7 KB)
+  📄 run_experiment_100.py (12.6 KB)
+  📄 workload_generator.py (11.6 KB)
+  📁 results/
+    📄 metrics_100_deepseek.csv (26.0 KB)
+    📄 metrics_deepseek.csv (2.2 KB)
+    📄 metrics_mock.csv (2.2 KB)
+    📄 plot_100_deepseek.pdf (44.1 KB)
+    📄 plot_100_deepseek.png (736.4 KB)
+    📄 plot_deepseek.png (375.1 KB)
+    📄 plot_mock.png (365.7 KB)
+    📁 deepseek_skills/
+      📄 calculate_hypotenuse.py (1.2 KB)
+      📄 celsius_to_fahrenheit.py (457 B)
+      📄 fibonacci.py (266 B)
+      📄 test_calculate_hypotenuse.py (1.5 KB)
+      📄 test_celsius_to_fahrenheit.py (1.1 KB)
+      📄 test_fibonacci.py (1004 B)
+    📁 deepseek_skills_100/
+      📄 aggregate_by_category.py (547 B)
+      📄 calculate_annuity_loan_payment.py (1.8 KB)
+      📄 calculate_ema.py (1.2 KB)
+      📄 check_brackets_balanced.py (855 B)
+      📄 compute_ema.py (1.6 KB)
+      📄 compute_monthly_loan_payment.py (1.5 KB)
+      📄 compute_word_frequency.py (1.4 KB)
+      📄 count_business_days.py (1.1 KB)
+      📄 count_top_word_frequencies.py (1.0 KB)
+      📄 count_working_days.py (1.5 KB)
+      📄 extract_ipv4.py (318 B)
+      📄 extract_valid_ipv4_addresses.py (630 B)
+      📄 haversine_distance_km.py (1.5 KB)
+      📄 levenshtein_distance.py (1.4 KB)
+      📄 matrix_multiply_and_trace.py (2.7 KB)
+      📄 minimum_edit_distance.py (1.4 KB)
+      📄 multiply_matrices_and_trace.py (1.1 KB)
+      📄 parse_valid_ipv4_addresses.py (1.3 KB)
+      📄 run_length_encode.py (1.0 KB)
+      📄 sum_amounts_per_category.py (584 B)
+      📄 test_aggregate_by_category.py (2.4 KB)
+      📄 test_calculate_annuity_loan_payment.py (2.4 KB)
+      📄 test_calculate_ema.py (1.9 KB)
+      📄 test_check_brackets_balanced.py (1.1 KB)
+      📄 test_compute_ema.py (2.7 KB)
+      📄 test_compute_monthly_loan_payment.py (1.9 KB)
+      📄 test_compute_word_frequency.py (2.6 KB)
+      📄 test_count_business_days.py (2.9 KB)
+      📄 test_count_top_word_frequencies.py (3.0 KB)
+      📄 test_count_working_days.py (2.4 KB)
+      📄 test_extract_ipv4.py (1.1 KB)
+      📄 test_extract_valid_ipv4_addresses.py (1.9 KB)
+      📄 test_haversine_distance_km.py (3.0 KB)
+      📄 test_levenshtein_distance.py (2.0 KB)
+      📄 test_matrix_multiply_and_trace.py (2.6 KB)
+      📄 test_minimum_edit_distance.py (1.5 KB)
+      📄 test_multiply_matrices_and_trace.py (2.3 KB)
+      📄 test_parse_valid_ipv4_addresses.py (3.0 KB)
+      📄 test_run_length_encode.py (1.1 KB)
+      📄 test_sum_amounts_per_category.py (1.8 KB)
+    📁 generated_skills/
+      📄 calculate_fibonacci.py (169 B)
+      📄 calculate_hypotenuse.py (106 B)
+      📄 celsius_to_fahrenheit.py (94 B)
+      📄 test_calculate_fibonacci.py (114 B)
+      📄 test_calculate_hypotenuse.py (125 B)
+      📄 test_celsius_to_fahrenheit.py (123 B)
+📁 src/
+  📁 pycognition/
+    📄 __init__.py (680 B)
+    📄 py.typed (0 B)
+    📄 schemas.py (2.8 KB)
+    📁 core/
+      📄 arbiter.py (847 B)
+      📄 memory.py (1.1 KB)
+      📄 system1.py (1.2 KB)
+      📄 system2.py (989 B)
+    📁 engine/
+      📄 llm_deliberator.py (8.9 KB)
+      📄 meta_arbiter.py (3.7 KB)
+      📄 procedural_runner.py (3.9 KB)
+      📄 runtime.py (2.5 KB)
+      📄 skill_crystallizer.py (9.3 KB)
+    📁 memory/
+      📄 registry.py (6.9 KB)
+      📄 vector_store.py (4.5 KB)
+📁 tests/
+  📄 test_core.py (0 B)
+  📁 integration/
+    📄 test_crystallization_pipeline.py (4.9 KB)
+  📁 unit/
+    📄 test_llm_deliberator.py (7.5 KB)
+    📄 test_meta_arbiter.py (3.9 KB)
+    📄 test_procedural_runner.py (3.5 KB)
+    📄 test_skill_crystallizer.py (4.3 KB)
+    📄 test_skill_registry.py (4.9 KB)
+
+======================================================================
+СОСТАВ PYTHON-МОДУЛЕЙ (КЛАССЫ И ФУНКЦИИ ВЕРХНЕГО УРОВНЯ):
+======================================================================
+
+Модуль: export_preprints.py
+    • def find_browser()
+    • def render_pdf_with_browser()
+    • def render_pdf_with_weasyprint()
+    • def main()
+
+Модуль: benchmarks\benchmark_suite.py
+    • class MockDeliberator
+    • def get_default_benchmark_tasks()
+    • def _extract_json_payload()
+    • class BenchmarkSuite
+    • def print_summary_report()
+    • def parse_args()
+    • async def main()
+
+Модуль: benchmarks\plot_results.py
+    • def load_metrics_from_csv()
+    • def generate_publication_plots()
+    • def main()
+
+Модуль: benchmarks\run_experiment_100.py
+    • def _extract_json_payload()
+    • class ExperimentRunner
+    • def print_final_statistics()
+    • def parse_arguments()
+    • async def main()
+
+Модуль: benchmarks\workload_generator.py
+    • def generate_complex_100_workload()
+
+Модуль: benchmarks\results\deepseek_skills\calculate_hypotenuse.py
+    • def calculate_hypotenuse()
+
+Модуль: benchmarks\results\deepseek_skills\celsius_to_fahrenheit.py
+    • def celsius_to_fahrenheit()
+
+Модуль: benchmarks\results\deepseek_skills\fibonacci.py
+    • def fibonacci()
+
+Модуль: benchmarks\results\deepseek_skills\test_calculate_hypotenuse.py
+    • def test_three_four_five()
+    • def test_equal_legs()
+    • def test_zero_leg()
+    • def test_both_zero()
+    • def test_integer_inputs()
+    • def test_large_values()
+    • def test_small_values()
+    • def test_negative_leg_raises()
+    • def test_non_numeric_raises()
+    • def test_bool_raises()
+    • def test_returns_float()
+
+Модуль: benchmarks\results\deepseek_skills\test_celsius_to_fahrenheit.py
+    • def test_celsius_to_fahrenheit_known_values()
+    • def test_celsius_to_fahrenheit_returns_float()
+    • def test_celsius_to_fahrenheit_identity_minus40()
+    • def test_celsius_to_fahrenheit_linearity()
+
+Модуль: benchmarks\results\deepseek_skills\test_fibonacci.py
+    • def test_fibonacci_zero()
+    • def test_fibonacci_one()
+    • def test_fibonacci_two()
+    • def test_fibonacci_three()
+    • def test_fibonacci_ten()
+    • def test_fibonacci_twenty()
+    • def test_fibonacci_large()
+    • def test_fibonacci_negative_raises()
+    • def test_fibonacci_float_raises()
+    • def test_fibonacci_string_raises()
+    • def test_fibonacci_bool_raises()
+    • def test_fibonacci_none_raises()
+
+Модуль: benchmarks\results\deepseek_skills_100\aggregate_by_category.py
+    • def aggregate_by_category()
+
+Модуль: benchmarks\results\deepseek_skills_100\calculate_annuity_loan_payment.py
+    • def calculate_annuity_loan_payment()
+
+Модуль: benchmarks\results\deepseek_skills_100\calculate_ema.py
+    • def calculate_ema()
+
+Модуль: benchmarks\results\deepseek_skills_100\check_brackets_balanced.py
+    • def check_brackets_balanced()
+
+Модуль: benchmarks\results\deepseek_skills_100\compute_ema.py
+    • def compute_ema()
+
+Модуль: benchmarks\results\deepseek_skills_100\compute_monthly_loan_payment.py
+    • def compute_monthly_loan_payment()
+
+Модуль: benchmarks\results\deepseek_skills_100\compute_word_frequency.py
+    • def compute_word_frequency()
+
+Модуль: benchmarks\results\deepseek_skills_100\count_business_days.py
+    • def count_business_days()
+
+Модуль: benchmarks\results\deepseek_skills_100\count_top_word_frequencies.py
+    • def count_top_word_frequencies()
+
+Модуль: benchmarks\results\deepseek_skills_100\count_working_days.py
+    • def count_working_days()
+
+Модуль: benchmarks\results\deepseek_skills_100\extract_ipv4.py
+    • def extract_ipv4()
+
+Модуль: benchmarks\results\deepseek_skills_100\extract_valid_ipv4_addresses.py
+    • def extract_valid_ipv4_addresses()
+
+Модуль: benchmarks\results\deepseek_skills_100\haversine_distance_km.py
+    • def haversine_distance_km()
+
+Модуль: benchmarks\results\deepseek_skills_100\levenshtein_distance.py
+    • def levenshtein_distance()
+
+Модуль: benchmarks\results\deepseek_skills_100\matrix_multiply_and_trace.py
+    • def matrix_multiply_and_trace()
+
+Модуль: benchmarks\results\deepseek_skills_100\minimum_edit_distance.py
+    • def minimum_edit_distance()
+
+Модуль: benchmarks\results\deepseek_skills_100\multiply_matrices_and_trace.py
+    • def multiply_matrices_and_trace()
+
+Модуль: benchmarks\results\deepseek_skills_100\parse_valid_ipv4_addresses.py
+    • def parse_valid_ipv4_addresses()
+    • def _is_valid_ipv4()
+
+Модуль: benchmarks\results\deepseek_skills_100\run_length_encode.py
+    • def run_length_encode()
+
+Модуль: benchmarks\results\deepseek_skills_100\sum_amounts_per_category.py
+    • def sum_amounts_per_category()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_aggregate_by_category.py
+    • def test_empty_list()
+    • def test_single_record()
+    • def test_multiple_same_category()
+    • def test_multiple_categories()
+    • def test_negative_amounts()
+    • def test_float_amounts()
+    • def test_zero_amounts()
+    • def test_mixed_int_float()
+    • def test_does_not_mutate_input()
+    • def test_returns_new_dict_each_call()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_calculate_annuity_loan_payment.py
+    • def test_zero_interest()
+    • def test_standard_case()
+    • def test_long_tenure()
+    • def test_integer_inputs()
+    • def test_negative_principal()
+    • def test_zero_principal()
+    • def test_negative_rate()
+    • def test_zero_tenure()
+    • def test_negative_tenure()
+    • def test_wrong_type_principal()
+    • def test_wrong_type_rate()
+    • def test_wrong_type_tenure()
+    • def test_bool_rejected()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_calculate_ema.py
+    • def test_empty_list()
+    • def test_single_value()
+    • def test_default_alpha()
+    • def test_custom_alpha()
+    • def test_alpha_one()
+    • def test_length_preserved()
+    • def test_invalid_alpha_zero()
+    • def test_invalid_alpha_negative()
+    • def test_invalid_alpha_greater_than_one()
+    • def test_invalid_values_type()
+    • def test_invalid_element_type()
+    • def test_invalid_alpha_type()
+    • def test_bool_alpha_rejected()
+    • def test_bool_element_rejected()
+    • def test_integer_values()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_check_brackets_balanced.py
+    • def test_check_brackets_balanced()
+    • def test_returns_bool_type()
+    • def test_non_string_raises_type_error()
+    • def test_none_raises_type_error()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_compute_ema.py
+    • def test_single_value()
+    • def test_alpha_one_returns_input()
+    • def test_known_sequence()
+    • def test_length_matches_input()
+    • def test_first_value_initialization()
+    • def test_constant_series()
+    • def test_alpha_small()
+    • def test_negative_values()
+    • def test_alpha_zero_raises()
+    • def test_alpha_negative_raises()
+    • def test_alpha_greater_than_one_raises()
+    • def test_empty_values_raises()
+    • def test_values_not_list_raises()
+    • def test_alpha_not_number_raises()
+    • def test_alpha_bool_raises()
+    • def test_return_types()
+    • def test_determinism()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_compute_monthly_loan_payment.py
+    • def test_zero_interest()
+    • def test_standard_loan()
+    • def test_short_term_high_rate()
+    • def test_principal_equals_payment_when_one_month()
+    • def test_invalid_principal_zero()
+    • def test_invalid_principal_negative()
+    • def test_invalid_annual_rate_negative()
+    • def test_invalid_months_zero()
+    • def test_invalid_months_negative()
+    • def test_type_error_principal()
+    • def test_type_error_annual_rate()
+    • def test_type_error_months()
+    • def test_type_error_months_bool()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_compute_word_frequency.py
+    • def test_basic_counts()
+    • def test_default_stop_words()
+    • def test_sorting_by_frequency_then_alpha()
+    • def test_top_k()
+    • def test_top_k_zero()
+    • def test_empty_text()
+    • def test_punctuation_and_case()
+    • def test_apostrophes_and_numbers()
+    • def test_stop_words_case_insensitive()
+    • def test_invalid_text_type()
+    • def test_invalid_stop_words_type()
+    • def test_invalid_stop_words_element()
+    • def test_invalid_top_k_type()
+    • def test_invalid_top_k_bool()
+    • def test_negative_top_k()
+    • def test_deterministic_output()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_count_business_days.py
+    • class TestCountBusinessDays
+
+Модуль: benchmarks\results\deepseek_skills_100\test_count_top_word_frequencies.py
+    • def test_basic_top_words()
+    • def test_default_top_k_is_three()
+    • def test_stop_words_excluded()
+    • def test_alphabetical_tie_break()
+    • def test_case_insensitive()
+    • def test_punctuation_ignored()
+    • def test_top_k_zero()
+    • def test_top_k_larger_than_unique()
+    • def test_empty_text()
+    • def test_whitespace_only()
+    • def test_non_string_text_raises()
+    • def test_non_integer_top_k_raises()
+    • def test_bool_top_k_raises()
+    • def test_negative_top_k_raises()
+    • def test_numbers_are_words()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_count_working_days.py
+    • class TestCountWorkingDays
+
+Модуль: benchmarks\results\deepseek_skills_100\test_extract_ipv4.py
+    • def test_simple_address()
+    • def test_multiple_addresses()
+    • def test_no_addresses()
+    • def test_empty_string()
+    • def test_invalid_octet_too_large()
+    • def test_invalid_octet_leading_zero()
+    • def test_boundary_values()
+    • def test_not_part_of_longer_number()
+    • def test_embedded_in_text()
+    • def test_type_error_on_non_str()
+    • def test_returns_list()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_extract_valid_ipv4_addresses.py
+    • def test_empty_string()
+    • def test_no_ip()
+    • def test_simple_ip()
+    • def test_multiple_ips_in_order()
+    • def test_boundary_octets()
+    • def test_out_of_range_octet()
+    • def test_leading_zeros_rejected()
+    • def test_single_zero_octet_allowed()
+    • def test_embedded_in_longer_number_rejected()
+    • def test_adjacent_dots_rejected()
+    • def test_duplicates_preserved()
+    • def test_type_error_on_non_str()
+    • def test_mixed_valid_and_invalid()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_haversine_distance_km.py
+    • def test_same_point_returns_zero()
+    • def test_same_point_nonzero_coords()
+    • def test_equator_one_degree_longitude()
+    • def test_meridian_one_degree_latitude()
+    • def test_antipodal_points_half_circumference()
+    • def test_antipodal_poles()
+    • def test_symmetry()
+    • def test_moscow_to_spb()
+    • def test_london_to_paris()
+    • def test_new_york_to_los_angeles()
+    • def test_returns_float()
+    • def test_non_negative()
+    • def test_longitude_wraparound()
+    • def test_triangle_inequality()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_levenshtein_distance.py
+    • class TestLevenshteinDistance
+
+Модуль: benchmarks\results\deepseek_skills_100\test_matrix_multiply_and_trace.py
+    • def test_square_matrices()
+    • def test_identity_matrix()
+    • def test_rectangular_matrices()
+    • def test_non_square_trace()
+    • def test_float_values()
+    • def test_single_element()
+    • def test_incompatible_dimensions()
+    • def test_empty_matrix()
+    • def test_ragged_matrix()
+    • def test_non_numeric_entries()
+    • def test_non_list_input()
+    • def test_bool_rejected()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_minimum_edit_distance.py
+    • def test_both_empty()
+    • def test_first_empty()
+    • def test_second_empty()
+    • def test_identical_strings()
+    • def test_classic_kitten_sitting()
+    • def test_single_substitution()
+    • def test_single_insertion()
+    • def test_single_deletion()
+    • def test_completely_different()
+    • def test_symmetric()
+    • def test_unicode_strings()
+    • def test_long_strings()
+    • def test_type_error_non_string()
+    • def test_whitespace_strings()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_multiply_matrices_and_trace.py
+    • def test_identity_matrices()
+    • def test_simple_2x2()
+    • def test_3x3()
+    • def test_1x1()
+    • def test_empty_matrices()
+    • def test_negative_numbers()
+    • def test_float_numbers()
+    • def test_non_square_matrix_a()
+    • def test_non_square_matrix_b()
+    • def test_mismatched_sizes()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_parse_valid_ipv4_addresses.py
+    • class TestParseValidIPv4Addresses
+
+Модуль: benchmarks\results\deepseek_skills_100\test_run_length_encode.py
+    • def test_empty_string()
+    • def test_single_character()
+    • def test_all_same_characters()
+    • def test_no_repeats()
+    • def test_mixed_repeats()
+    • def test_repeats_at_ends()
+    • def test_single_repeat_in_middle()
+    • def test_digits_and_letters()
+    • def test_special_characters()
+    • def test_whitespace()
+    • def test_long_run()
+    • def test_type_error_on_non_string()
+    • def test_type_error_on_none()
+
+Модуль: benchmarks\results\deepseek_skills_100\test_sum_amounts_per_category.py
+    • def test_empty_list()
+    • def test_single_record()
+    • def test_multiple_categories()
+    • def test_negative_amounts()
+    • def test_zero_amounts()
+    • def test_float_precision()
+    • def test_does_not_mutate_input()
+    • def test_missing_key_raises()
+
+Модуль: benchmarks\results\generated_skills\calculate_fibonacci.py
+    • def calculate_fibonacci()
+
+Модуль: benchmarks\results\generated_skills\calculate_hypotenuse.py
+    • def calculate_hypotenuse()
+
+Модуль: benchmarks\results\generated_skills\celsius_to_fahrenheit.py
+    • def celsius_to_fahrenheit()
+
+Модуль: benchmarks\results\generated_skills\test_calculate_fibonacci.py
+    • def test_fib()
+
+Модуль: benchmarks\results\generated_skills\test_calculate_hypotenuse.py
+    • def test_hypo()
+
+Модуль: benchmarks\results\generated_skills\test_celsius_to_fahrenheit.py
+    • def test_c2f()
+
+Модуль: src\pycognition\__init__.py
+    (нет классов или функций верхнего уровня / скрипт / пустой)
+
+Модуль: src\pycognition\schemas.py
+    • class CognitiveTrack
+    • class ExecutionStatus
+    • class Task
+    • class SkillSignature
+    • class RoutingDecision
+    • class ExecutionResult
+
+Модуль: src\pycognition\core\arbiter.py
+    • class BaseArbiter
+
+Модуль: src\pycognition\core\memory.py
+    • class BaseMemory
+
+Модуль: src\pycognition\core\system1.py
+    • class BaseSystem1
+
+Модуль: src\pycognition\core\system2.py
+    • class BaseSystem2
+
+Модуль: src\pycognition\engine\llm_deliberator.py
+    • class LLMProvider
+    • class LLMDeliberator
+
+Модуль: src\pycognition\engine\meta_arbiter.py
+    • class MetaArbiter
+
+Модуль: src\pycognition\engine\procedural_runner.py
+    • class ProceduralRunner
+
+Модуль: src\pycognition\engine\runtime.py
+    • class CognitiveRuntime
+
+Модуль: src\pycognition\engine\skill_crystallizer.py
+    • class CrystallizationResult
+    • class ASTSecurityValidator
+    • class SkillCrystallizer
+
+Модуль: src\pycognition\memory\registry.py
+    • class SkillRegistryError
+    • class SkillRegistry
+
+Модуль: src\pycognition\memory\vector_store.py
+    • class VectorStoreMemory
+
+Модуль: tests\test_core.py
+    (нет классов или функций верхнего уровня / скрипт / пустой)
+
+Модуль: tests\integration\test_crystallization_pipeline.py
+    • def test_environment()
+    • async def test_full_cognitive_lifecycle()
+
+Модуль: tests\unit\test_llm_deliberator.py
+    • def sample_task()
+    • def test_initialization_defaults()
+    • def test_initialization_deepseek()
+    • async def test_deliberate_openai_success()
+    • async def test_deliberate_deepseek_success()
+    • async def test_deliberate_api_error_response()
+    • async def test_deliberate_network_exception()
+    • async def test_synthesize_skill_success()
+    • async def test_synthesize_skill_failure_invalid_json()
+
+Модуль: tests\unit\test_meta_arbiter.py
+    • class MockMemory
+    • def sample_skill()
+    • def test_confidence_threshold_validation()
+    • async def test_route_to_system2_without_memory()
+    • async def test_route_to_system1_explicit_metadata()
+    • async def test_route_to_system1_with_high_memory_confidence()
+    • async def test_route_to_system2_with_low_memory_confidence()
+
+Модуль: tests\unit\test_procedural_runner.py
+    • def runner()
+    • def sample_signature()
+    • def test_register_and_has_skill()
+    • async def test_execute_sync_skill_success()
+    • async def test_execute_async_skill_success()
+    • async def test_execute_skill_accepting_task_object()
+    • async def test_execute_non_existent_skill()
+    • async def test_execute_failing_skill_isolation()
+
+Модуль: tests\unit\test_skill_crystallizer.py
+    • def crystallizer()
+    • def valid_signature()
+    • def test_validate_ast_success()
+    • def test_validate_ast_syntax_error()
+    • def test_validate_ast_missing_function()
+    • def test_validate_ast_banned_import()
+    • def test_validate_ast_banned_function()
+    • async def test_run_sandbox_tests_success()
+    • async def test_run_sandbox_tests_failure()
+    • async def test_run_sandbox_tests_timeout()
+    • async def test_crystallize_full_cycle()
+
+Модуль: tests\unit\test_skill_registry.py
+    • def runner()
+    • def registry()
+    • def sample_signature()
+    • def test_save_skill_artifacts()
+    • async def test_load_skill_from_file_and_execute()
+    • def test_load_skill_fallback_signature_without_meta_json()
+    • def test_load_skill_missing_file_raises_error()
+    • def test_load_skill_syntax_error_raises_error()
+    • def test_load_skill_missing_target_callable()
+    • async def test_load_all_skills_directory()
