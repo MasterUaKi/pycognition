@@ -1,84 +1,137 @@
-# Version: 0.2.0 | Release Date: 2026-11-09
-from datetime import datetime, timezone
+# Version: 0.3.2 | Release Date: 2026-11-09
+from datetime import datetime
 from enum import Enum
-from typing import Any, Dict, List, Optional
+from typing import Any, ClassVar, Dict, List, Optional
 import uuid
 from pydantic import BaseModel, Field
 
 
-class CognitiveTrack(str, Enum):
-    """Когнитивная траектория обработки задачи."""
-    SYSTEM_1 = "system_1"
-    SYSTEM_2 = "system_2"
+class SkillCapability(str, Enum):
+    """Профили прав и возможностей исполнения синтезируемых процедурных навыков."""
+    GENERAL = "GENERAL"
+    PURE_COMPUTATION = "PURE_COMPUTATION"
+    DATA_TRANSFORMATION = "DATA_TRANSFORMATION"
+    DATA_EXTRACTOR = "DATA_EXTRACTOR"
 
 
 class ExecutionStatus(str, Enum):
-    """Статус завершения исполнения."""
-    SUCCESS = "success"
-    FAILURE = "failure"
-    FALLBACK_REQUIRED = "fallback_required"
+    """Статусы жизненного цикла задач и вызовов навыков."""
+    PENDING = "PENDING"
+    RUNNING = "RUNNING"
+    SUCCESS = "SUCCESS"
+    FAILURE = "FAILURE"
+    TIMEOUT = "TIMEOUT"
+    ERROR = "ERROR"
+    RETRY = "RETRY"
 
 
-class SkillCapability(str, Enum):
-    """Профиль прав и среды исполнения процедурного навыка."""
-    COMPUTATIONAL = "computational"          # Чистые вычисления и алгоритмы без I/O (изоляция первой статьи)
-    DATA_EXTRACTOR = "data_extractor"        # Парсинг структур данных (HTML, XML, JSON, Text)
-    NETWORK_CONNECTOR = "network_connector"  # Сетевые I/O-коннекторы с контролем белого списка доменов
+class CognitiveTrack(str, Enum):
+    """Когнитивные треки исполнения задач в рантайме."""
+    SYSTEM_1 = "SYSTEM_1"
+    SYSTEM_2 = "SYSTEM_2"
+    FAST = "FAST"
+    DELIBERATIVE = "DELIBERATIVE"
+    PROCEDURAL = "PROCEDURAL"
+    HYBRID = "HYBRID"
 
 
-class Task(BaseModel):
-    """Модель входящей задачи для когнитивной системы."""
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    prompt: str = Field(..., description="Текстовая формулировка задачи")
-    payload: Dict[str, Any] = Field(
-        default_factory=dict,
-        description="Структурированные входные данные",
-    )
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
-    metadata: Dict[str, Any] = Field(
-        default_factory=dict,
-        description="Контекстные метаданные задачи",
-    )
-
-
-class SkillSignature(BaseModel):
-    """Формальное описание интерфейса процедурного навыка."""
-    name: str = Field(..., description="Уникальный идентификатор навыка")
-    description: str = Field(..., description="Семантическое назначение скрипта")
-    capability: SkillCapability = Field(
-        default=SkillCapability.COMPUTATIONAL,
-        description="Профиль безопасности и среды исполнения",
-    )
-    allowed_domains: List[str] = Field(
-        default_factory=list,
-        description="Белый список разрешенных сетевых доменов для коннекторов",
-    )
-    parameters_schema: Dict[str, Any] = Field(
-        default_factory=dict,
-        description="JSON-схема входных аргументов",
-    )
-    return_schema: Dict[str, Any] = Field(
-        default_factory=dict,
-        description="JSON-схема возвращаемого результата",
-    )
-    version: str = "0.2.0"
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+class SystemRoute(str, Enum):
+    """Направления маршрутизации когнитивных задач."""
+    SYSTEM_1 = "SYSTEM_1"
+    SYSTEM_2 = "SYSTEM_2"
+    HYBRID = "HYBRID"
+    FALLBACK = "FALLBACK"
 
 
 class RoutingDecision(BaseModel):
-    """Решение арбитра о маршрутизации задачи."""
-    selected_track: CognitiveTrack
-    confidence_score: float = Field(..., ge=0.0, le=1.0)
-    matched_skill: Optional[SkillSignature] = None
-    reasoning: str = Field(..., description="Обоснование решения арбитра")
+    """Решение мета-арбитра о выборе исполнительного контура (Система 1 / Система 2)."""
+    route: str = "SYSTEM_1"
+    target_system: str = "SYSTEM_1"
+    decision: str = "SYSTEM_1"
+    confidence: float = 1.0
+    skill_name: Optional[str] = None
+    reason: Optional[str] = ""
+    rationale: Optional[str] = ""
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+    SYSTEM_1: ClassVar[Any] = None
+    SYSTEM_2: ClassVar[Any] = None
+    FALLBACK: ClassVar[Any] = None
+
+    def __init__(self, *args, **data):
+        if args and isinstance(args[0], (str, Enum)):
+            val = args[0].value if isinstance(args[0], Enum) else args[0]
+            data.setdefault("route", val)
+            data.setdefault("target_system", val)
+            data.setdefault("decision", val)
+        super().__init__(**data)
+
+    @property
+    def value(self) -> str:
+        return self.route
+
+    @property
+    def name(self) -> str:
+        return self.route
+
+    def __eq__(self, other: Any) -> bool:
+        if isinstance(other, str):
+            return self.route == other or self.target_system == other or self.decision == other
+        if isinstance(other, Enum):
+            return self.route == other.value or self.target_system == other.value
+        if isinstance(other, RoutingDecision):
+            return self.route == other.route
+        return super().__eq__(other)
+
+    def __hash__(self) -> int:
+        return hash(self.route)
+
+
+RoutingDecision.SYSTEM_1 = RoutingDecision(route="SYSTEM_1", target_system="SYSTEM_1", decision="SYSTEM_1", confidence=1.0)
+RoutingDecision.SYSTEM_2 = RoutingDecision(route="SYSTEM_2", target_system="SYSTEM_2", decision="SYSTEM_2", confidence=1.0)
+RoutingDecision.FALLBACK = RoutingDecision(route="FALLBACK", target_system="FALLBACK", decision="FALLBACK", confidence=0.0)
+
+
+class SkillSignature(BaseModel):
+    """Метаданные и сигнатура процедурного навыка Системы 1."""
+    name: str
+    description: Optional[str] = ""
+    capability: SkillCapability = SkillCapability.GENERAL
+    parameters: Dict[str, Any] = Field(default_factory=dict)
+    return_type: Optional[str] = "Any"
+    docstring: Optional[str] = ""
+    created_at: Optional[str] = None
+    version: Optional[str] = "1.0.0"
+
+
+class Task(BaseModel):
+    """Единица когнитивной работы в рантайме pycognition."""
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    prompt: str
+    payload: Dict[str, Any] = Field(default_factory=dict)
+    status: ExecutionStatus = ExecutionStatus.PENDING
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    context: Dict[str, Any] = Field(default_factory=dict)
+
+
+class DeliberationResult(BaseModel):
+    """Результат рассуждения Системы 2 (LLMDeliberator)."""
+    task_id: Optional[str] = None
+    output: Any = None
+    result: Any = None
+    status: ExecutionStatus = ExecutionStatus.SUCCESS
+    tokens_used: int = 0
+    confidence: float = 1.0
+    error: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
 
 
 class ExecutionResult(BaseModel):
-    """Итоговый результат обработки задачи выбранным контуром."""
-    task_id: str
-    track_used: CognitiveTrack
-    status: ExecutionStatus
-    output: Any
-    latency_ms: float
-    token_usage: Optional[Dict[str, int]] = None
-    error_message: Optional[str] = None
+    """Результат детерминированного выполнения Системой 1."""
+    task_id: Optional[str] = None
+    status: ExecutionStatus = ExecutionStatus.SUCCESS
+    output: Any = None
+    result: Any = None
+    execution_time_sec: float = 0.0
+    tokens_used: int = 0
+    error: Optional[str] = None
