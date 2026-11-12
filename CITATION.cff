@@ -1,0 +1,39 @@
+# File: CITATION.cff
+# Version: 1.2.0 | Release Date: 2026-11-12
+cff-version: 1.2.0
+message: "If you use PyCognition or the WebDrift-Fault-50 benchmark in your research, please cite it as below. / Wenn Sie PyCognition oder den Benchmark WebDrift-Fault-50 in Ihrer Forschung nutzen, zitieren Sie diese bitte wie folgt."
+title: "PyCognition: Dual-Tier Neuro-Symbolic Cognitive Orchestration Framework with Telemetry-Driven Skill Refactoring"
+version: 1.2.0
+date-released: 2026-11-12
+authors:
+  - family-names: "Riabtsev"
+    given-names: "Oleh"
+    affiliation: "Universität Vechta"
+repository-code: "https://github.com/MasterUaKi/pycognition"
+url: "https://github.com/MasterUaKi/pycognition"
+license: "LGPL-3.0-or-later"
+keywords:
+  - "neuro-symbolic AI"
+  - "cognitive orchestration"
+  - "self-healing agents"
+  - "skill crystallization"
+  - "AST safety auditing"
+  - "capability-based security"
+  - "telemetry-driven refactoring"
+  - "WebDrift-Fault-50"
+references:
+  - type: software
+    title: "Grant Harvester: Autonomous Academic Funding Monitoring Framework with Cognitive Multi-Tier Reflection"
+    authors:
+      - family-names: "Riabtsev"
+        given-names: "Oleh"
+    year: 2026
+    doi: "10.5281/zenodo.24106395"
+abstract: |
+  PyCognition is a domain-agnostic neuro-symbolic orchestration framework pairing fast,
+  deterministic System 1 procedural execution with deliberative System 2 LLM reflection.
+  Version 1.2.0 introduces a closed-loop telemetry-driven skill refactoring subsystem
+  (capability.py, telemetry.py, crystallizer.py) and the WebDrift-Fault-50 benchmark.
+  By shifting feedback from data-level micro-patching to AST-audited, regression-guarded
+  code synthesis, PyCognition eliminates toxic micro-compensation and database poisoning
+  in non-stationary open web environments.
