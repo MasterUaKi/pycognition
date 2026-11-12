@@ -5,7 +5,6 @@
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0003--7848--6418-green.svg)](https://orcid.org/0009-0003-7848-6418)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10000000.svg)](https://doi.org/10.5281/zenodo.10000000)
 [![Case Study DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24106395.svg)](https://doi.org/10.5281/zenodo.24106395)
 [![Benchmark: WebDrift-Fault-50](https://img.shields.io/badge/Benchmark-WebDrift--Fault--50-informational.svg)](benchmarks/webdrift_fault_50.json)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
