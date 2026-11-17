@@ -1,0 +1,5110 @@
+{
+  "dataset_name": "ChronoDrift-Entity-60",
+  "version": "1.3.0",
+  "release_date": "2026-11-17",
+  "framework": "PyCognition v1.3.0",
+  "total_episodes": 60,
+  "total_observations": 360,
+  "episodes": [
+    {
+      "episode_id": "E01",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-1",
+          "title": "DFG Schwerpunktprogramm Quantencomputing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-1",
+          "title": "DFG Priority Programme Quantum Computing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-1",
+          "title": "DFG Schwerpunktprogramm Quantencomputing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-1",
+          "title": "DFG Priority Programme Quantum Computing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-1",
+          "title": "DFG Schwerpunktprogramm Quantencomputing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-1",
+          "title": "DFG Priority Programme Quantum Computing 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E01_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E02",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-2",
+          "title": "DFG Forschungsgruppen Nachhaltige Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-2",
+          "title": "DFG Research Units Sustainable Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-2",
+          "title": "DFG Forschungsgruppen Nachhaltige Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-2",
+          "title": "DFG Research Units Sustainable Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-2",
+          "title": "DFG Forschungsgruppen Nachhaltige Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-2",
+          "title": "DFG Research Units Sustainable Transformation",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E02_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E03",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-3",
+          "title": "BMBF Richtlinie KI-Nachwuchsgruppen 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-3",
+          "title": "BMBF Guideline AI Junior Research Groups 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-3",
+          "title": "BMBF Richtlinie KI-Nachwuchsgruppen 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-3",
+          "title": "BMBF Guideline AI Junior Research Groups 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-3",
+          "title": "BMBF Richtlinie KI-Nachwuchsgruppen 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-3",
+          "title": "BMBF Guideline AI Junior Research Groups 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E03_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E04",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-4",
+          "title": "DAAD Postdoktoranden-Programm PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-4",
+          "title": "DAAD Postdoctoral Researchers International Mobility PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-4",
+          "title": "DAAD Postdoktoranden-Programm PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-4",
+          "title": "DAAD Postdoctoral Researchers International Mobility PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-4",
+          "title": "DAAD Postdoktoranden-Programm PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-4",
+          "title": "DAAD Postdoctoral Researchers International Mobility PRIME 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E04_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E05",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-5",
+          "title": "DFG Graduiertenkollegs Ausschreibung 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-5",
+          "title": "DFG Research Training Groups Call 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-5",
+          "title": "DFG Graduiertenkollegs Ausschreibung 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-5",
+          "title": "DFG Research Training Groups Call 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-5",
+          "title": "DFG Graduiertenkollegs Ausschreibung 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-5",
+          "title": "DFG Research Training Groups Call 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E05_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E06",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-6",
+          "title": "BMBF Verbundprojekte Batterieforschung Deutschland",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-6",
+          "title": "BMBF Collaborative Projects Battery Research Germany",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-6",
+          "title": "BMBF Verbundprojekte Batterieforschung Deutschland",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-6",
+          "title": "BMBF Collaborative Projects Battery Research Germany",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-6",
+          "title": "BMBF Verbundprojekte Batterieforschung Deutschland",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-6",
+          "title": "BMBF Collaborative Projects Battery Research Germany",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E06_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E07",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-7",
+          "title": "DFG Heisenberg-Programm Stipendien 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-7",
+          "title": "DFG Heisenberg Programme Fellowships 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-7",
+          "title": "DFG Heisenberg-Programm Stipendien 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-7",
+          "title": "DFG Heisenberg Programme Fellowships 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-7",
+          "title": "DFG Heisenberg-Programm Stipendien 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-7",
+          "title": "DFG Heisenberg Programme Fellowships 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E07_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E08",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-8",
+          "title": "DAAD Gastdozenturen Internationale Hochschulen",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-8",
+          "title": "DAAD Visiting Professorships International Universities",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-8",
+          "title": "DAAD Gastdozenturen Internationale Hochschulen",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-8",
+          "title": "DAAD Visiting Professorships International Universities",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "daad_de",
+          "raw_uri": "https://daad.de/de/call-8",
+          "title": "DAAD Gastdozenturen Internationale Hochschulen",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "daad_en",
+          "raw_uri": "https://daad.de/en/call-8",
+          "title": "DAAD Visiting Professorships International Universities",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E08_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E09",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-9",
+          "title": "DFG Klinische Studien Förderprogramm 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-9",
+          "title": "DFG Clinical Trials Funding Programme 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-9",
+          "title": "DFG Klinische Studien Förderprogramm 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-9",
+          "title": "DFG Clinical Trials Funding Programme 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_de",
+          "raw_uri": "https://dfg.de/de/call-9",
+          "title": "DFG Klinische Studien Förderprogramm 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_en",
+          "raw_uri": "https://dfg.de/en/call-9",
+          "title": "DFG Clinical Trials Funding Programme 2026",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E09_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E10",
+      "scenario_class": "A_CROSS_LINGUAL_ALIAS",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-10",
+          "title": "BMBF Quantentechnologien Anwendungsnetzwerke",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-10",
+          "title": "BMBF Quantum Technologies Application Networks",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-10",
+          "title": "BMBF Quantentechnologien Anwendungsnetzwerke",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-10",
+          "title": "BMBF Quantum Technologies Application Networks",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "bmbf_de",
+          "raw_uri": "https://bmbf.de/de/call-10",
+          "title": "BMBF Quantentechnologien Anwendungsnetzwerke",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "bmbf_en",
+          "raw_uri": "https://bmbf.de/en/call-10",
+          "title": "BMBF Quantum Technologies Application Networks",
+          "deadline_iso": "2027-02-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E10_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E11",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-11",
+          "title": "ERC Horizon Europe Cluster 1 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E11_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E12",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-12",
+          "title": "ERC Horizon Europe Cluster 2 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E12_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E13",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-13",
+          "title": "ERC Horizon Europe Cluster 3 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E13_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E14",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-14",
+          "title": "ERC Horizon Europe Cluster 4 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E14_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E15",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-15",
+          "title": "ERC Horizon Europe Cluster 5 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E15_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E16",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-16",
+          "title": "ERC Horizon Europe Cluster 6 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E16_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E17",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-17",
+          "title": "ERC Horizon Europe Cluster 7 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E17_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E18",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-18",
+          "title": "ERC Horizon Europe Cluster 8 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E18_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E19",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-19",
+          "title": "ERC Horizon Europe Cluster 9 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E19_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E20",
+      "scenario_class": "B_URI_MIGRATION_SYNDICATION",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "ALIAS_MERGED"
+      ],
+      "expected_action_types": [
+        "CONSOLIDATE_CROSS_SOURCE_METADATA"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/calls/c-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "eu_tenders",
+          "raw_uri": "https://ec.europa.eu/tenders/topic-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027 — EU Funding Portal",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.europa.eu/archive-v2/calls/c-20",
+          "title": "ERC Horizon Europe Cluster 10 Synergy Call 2027",
+          "deadline_iso": "2027-03-01",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E20_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E21",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-21",
+          "title": "VolkswagenStiftung Momentum Track 1",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E21_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E22",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-22",
+          "title": "VolkswagenStiftung Momentum Track 2",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E22_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E23",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-23",
+          "title": "VolkswagenStiftung Momentum Track 3",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E23_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E24",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-24",
+          "title": "VolkswagenStiftung Momentum Track 4",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E24_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E25",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-25",
+          "title": "VolkswagenStiftung Momentum Track 5",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E25_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E26",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-26",
+          "title": "VolkswagenStiftung Momentum Track 6",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E26_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E27",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-27",
+          "title": "VolkswagenStiftung Momentum Track 7",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E27_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E28",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-28",
+          "title": "VolkswagenStiftung Momentum Track 8",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E28_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E29",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-29",
+          "title": "VolkswagenStiftung Momentum Track 9",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E29_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E30",
+      "scenario_class": "C_DEADLINE_SHIFT",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "DEADLINE_EXTENDED"
+      ],
+      "expected_action_types": [
+        "UPDATE_DEADLINE_RECORD"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2026-12-20",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2027-01-31",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "vw_stiftung",
+          "raw_uri": "https://volkswagenstiftung.de/p-30",
+          "title": "VolkswagenStiftung Momentum Track 10",
+          "deadline_iso": "2027-02-28",
+          "attributes": {
+            "funder": "VolkswagenStiftung"
+          },
+          "true_entity_key": "E30_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E31",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-31",
+          "title": "Humboldt Research Fellowship Cohort 1",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E31_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E32",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-32",
+          "title": "Humboldt Research Fellowship Cohort 2",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E32_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E33",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-33",
+          "title": "Humboldt Research Fellowship Cohort 3",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E33_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E34",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-34",
+          "title": "Humboldt Research Fellowship Cohort 4",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E34_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E35",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-35",
+          "title": "Humboldt Research Fellowship Cohort 5",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E35_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E36",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-36",
+          "title": "Humboldt Research Fellowship Cohort 6",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E36_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E37",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-37",
+          "title": "Humboldt Research Fellowship Cohort 7",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E37_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E38",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-38",
+          "title": "Humboldt Research Fellowship Cohort 8",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E38_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E39",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-39",
+          "title": "Humboldt Research Fellowship Cohort 9",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E39_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E40",
+      "scenario_class": "D_EXPIRATION_REOPENING",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRED",
+        "STATUS_REOPENED"
+      ],
+      "expected_action_types": [
+        "ARCHIVE_EXPIRED_ENTITY",
+        "DISPATCH_REOPENED_NOTICE"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2026-11-10",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "humboldt",
+          "raw_uri": "https://humboldt-foundation.de/f-40",
+          "title": "Humboldt Research Fellowship Cohort 10",
+          "deadline_iso": "2027-04-15",
+          "attributes": {
+            "funder": "Humboldt"
+          },
+          "true_entity_key": "E40_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E41",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-41",
+          "title": "Fritz Thyssen Project Grant Round 1",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E41_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E42",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-42",
+          "title": "Fritz Thyssen Project Grant Round 2",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E42_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E43",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-43",
+          "title": "Fritz Thyssen Project Grant Round 3",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E43_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E44",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-44",
+          "title": "Fritz Thyssen Project Grant Round 4",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E44_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E45",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-45",
+          "title": "Fritz Thyssen Project Grant Round 5",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E45_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E46",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-46",
+          "title": "Fritz Thyssen Project Grant Round 6",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E46_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E47",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-47",
+          "title": "Fritz Thyssen Project Grant Round 7",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E47_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E48",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-48",
+          "title": "Fritz Thyssen Project Grant Round 8",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E48_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E49",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-49",
+          "title": "Fritz Thyssen Project Grant Round 9",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E49_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E50",
+      "scenario_class": "E_URGENT_HORIZON_SWEEP",
+      "expected_unique_entities": 1,
+      "expected_key_transitions": [
+        "STATUS_EXPIRING_SOON",
+        "STATUS_EXPIRED"
+      ],
+      "expected_action_types": [
+        "DISPATCH_URGENT_ALERT",
+        "ARCHIVE_EXPIRED_ENTITY"
+      ],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "thyssen",
+          "raw_uri": "https://fritz-thyssen-stiftung.de/g-50",
+          "title": "Fritz Thyssen Project Grant Round 10",
+          "deadline_iso": "2026-12-03",
+          "attributes": {
+            "funder": "Thyssen"
+          },
+          "true_entity_key": "E50_canonical"
+        }
+      ]
+    },
+    {
+      "episode_id": "E51",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-51",
+          "title": "DFG Sachbeihilfe Forschungsprojekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-51",
+          "title": "DFG Eigene Stelle Nachwuchsförderung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-51",
+          "title": "DFG Sachbeihilfe Forschungsprojekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-51",
+          "title": "DFG Eigene Stelle Nachwuchsförderung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-51",
+          "title": "DFG Sachbeihilfe Forschungsprojekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-51",
+          "title": "DFG Eigene Stelle Nachwuchsförderung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E51_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E52",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-52",
+          "title": "ERC Starting Grant Frontier Research",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-52",
+          "title": "ERC Synergy Grant Collaborative Teams",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-52",
+          "title": "ERC Starting Grant Frontier Research",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-52",
+          "title": "ERC Synergy Grant Collaborative Teams",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-52",
+          "title": "ERC Starting Grant Frontier Research",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-52",
+          "title": "ERC Synergy Grant Collaborative Teams",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E52_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E53",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-53",
+          "title": "DAAD Jahresstipendien für Doktoranden",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-53",
+          "title": "DAAD Kurzstipendien für Forschungsaufenthalte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-53",
+          "title": "DAAD Jahresstipendien für Doktoranden",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-53",
+          "title": "DAAD Kurzstipendien für Forschungsaufenthalte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-53",
+          "title": "DAAD Jahresstipendien für Doktoranden",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-53",
+          "title": "DAAD Kurzstipendien für Forschungsaufenthalte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E53_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E54",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-54",
+          "title": "BMBF KMU-innovativ Biotechnologie",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-54",
+          "title": "BMBF KMU-innovativ Photonik",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-54",
+          "title": "BMBF KMU-innovativ Biotechnologie",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-54",
+          "title": "BMBF KMU-innovativ Photonik",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-54",
+          "title": "BMBF KMU-innovativ Biotechnologie",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-54",
+          "title": "BMBF KMU-innovativ Photonik",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E54_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E55",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-55",
+          "title": "DFG Koselleck-Projekte Risikoreiche Forschung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-55",
+          "title": "DFG Emmy Noether-Programm Nachwuchsgruppen",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-55",
+          "title": "DFG Koselleck-Projekte Risikoreiche Forschung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-55",
+          "title": "DFG Emmy Noether-Programm Nachwuchsgruppen",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-55",
+          "title": "DFG Koselleck-Projekte Risikoreiche Forschung",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-55",
+          "title": "DFG Emmy Noether-Programm Nachwuchsgruppen",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E55_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E56",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-56",
+          "title": "ERC Consolidator Grant Independent Leaders",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-56",
+          "title": "ERC Proof of Concept Innovation Grant",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-56",
+          "title": "ERC Consolidator Grant Independent Leaders",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-56",
+          "title": "ERC Proof of Concept Innovation Grant",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-56",
+          "title": "ERC Consolidator Grant Independent Leaders",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-56",
+          "title": "ERC Proof of Concept Innovation Grant",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E56_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E57",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-57",
+          "title": "DAAD Forschungsstipendien Promotion Deutschland",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-57",
+          "title": "DAAD Wiedereinladungen Ehemalige Stipendiaten",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-57",
+          "title": "DAAD Forschungsstipendien Promotion Deutschland",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-57",
+          "title": "DAAD Wiedereinladungen Ehemalige Stipendiaten",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/a-57",
+          "title": "DAAD Forschungsstipendien Promotion Deutschland",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "daad_portal",
+          "raw_uri": "https://daad.org/b-57",
+          "title": "DAAD Wiedereinladungen Ehemalige Stipendiaten",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DAAD"
+          },
+          "true_entity_key": "E57_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E58",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-58",
+          "title": "BMBF Validierung VIP+ Innovation",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-58",
+          "title": "BMBF GO-Bio Gründungsoffensive",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-58",
+          "title": "BMBF Validierung VIP+ Innovation",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-58",
+          "title": "BMBF GO-Bio Gründungsoffensive",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/a-58",
+          "title": "BMBF Validierung VIP+ Innovation",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "bmbf_portal",
+          "raw_uri": "https://bmbf.org/b-58",
+          "title": "BMBF GO-Bio Gründungsoffensive",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "BMBF"
+          },
+          "true_entity_key": "E58_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E59",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-59",
+          "title": "DFG Mercator-Fellowships Gastwissenschaftler",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-59",
+          "title": "DFG Reinhart Koselleck-Projekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-59",
+          "title": "DFG Mercator-Fellowships Gastwissenschaftler",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-59",
+          "title": "DFG Reinhart Koselleck-Projekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/a-59",
+          "title": "DFG Mercator-Fellowships Gastwissenschaftler",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "dfg_portal",
+          "raw_uri": "https://dfg.org/b-59",
+          "title": "DFG Reinhart Koselleck-Projekte",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "DFG"
+          },
+          "true_entity_key": "E59_prog_b"
+        }
+      ]
+    },
+    {
+      "episode_id": "E60",
+      "scenario_class": "F_HARD_NEGATIVE_HOMONYMS",
+      "expected_unique_entities": 2,
+      "expected_key_transitions": [],
+      "expected_action_types": [],
+      "observations": [
+        {
+          "step": 1,
+          "valid_time": "2026-11-01T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-60",
+          "title": "ERC Advanced Grant Established Investigators",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_a"
+        },
+        {
+          "step": 2,
+          "valid_time": "2026-11-08T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-60",
+          "title": "ERC Starting Grant Early Career",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_b"
+        },
+        {
+          "step": 3,
+          "valid_time": "2026-11-15T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-60",
+          "title": "ERC Advanced Grant Established Investigators",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_a"
+        },
+        {
+          "step": 4,
+          "valid_time": "2026-11-22T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-60",
+          "title": "ERC Starting Grant Early Career",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_b"
+        },
+        {
+          "step": 5,
+          "valid_time": "2026-11-29T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/a-60",
+          "title": "ERC Advanced Grant Established Investigators",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_a"
+        },
+        {
+          "step": 6,
+          "valid_time": "2026-12-06T08:00:00+00:00",
+          "source_id": "erc_portal",
+          "raw_uri": "https://erc.org/b-60",
+          "title": "ERC Starting Grant Early Career",
+          "deadline_iso": "2027-03-15",
+          "attributes": {
+            "funder": "ERC"
+          },
+          "true_entity_key": "E60_prog_b"
+        }
+      ]
+    }
+  ]
+}
