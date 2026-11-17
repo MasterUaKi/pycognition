@@ -1,0 +1,31 @@
+[33mcommit 1c401c64dcbaa11d7b8589ff89ac07bc647e18f7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: oriabtsev <oleh.riabtsev@uni-vechta.de>
+Date:   Thu Nov 12 14:11:33 2026 +0100
+
+    feat(skills): release PyCognition v1.2.0 with telemetry-driven refactoring, AST capability guard, and WebDrift-Fault-50
+
+ CITATION.cff                                 |  39 [32m++[m
+ README.md                                    | 223 [32m++++++[m[31m--[m
+ benchmarks/generate_webdrift_50.py           | 189 [32m+++++++[m
+ benchmarks/run_benchmark.py                  | 213 [32m+++++++[m
+ benchmarks/webdrift_fault_50.json            | 799 [32m+++++++++++++++++++++++++++[m
+ pyproject.toml                               |  81 [32m+[m[31m--[m
+ src/pycognition/__init__.py                  |   4 [32m+[m[31m-[m
+ src/pycognition/skills/__init__.py           |  36 [32m++[m
+ src/pycognition/skills/capability.py         | 156 [32m++++++[m
+ src/pycognition/skills/crystallizer.py       | 205 [32m+++++++[m
+ src/pycognition/skills/skill_crystallizer.py | 158 [32m++++++[m
+ src/pycognition/skills/telemetry.py          | 186 [32m+++++++[m
+ 12 files changed, 2203 insertions(+), 86 deletions(-)
+
+[33mcommit 3c3ce7b6223210fca10c6a16441d1fcfe1461521[m[33m ([m[1;33mtag: [m[1;33mv1.2.0[m[33m)[m
+Author: oriabtsev <oleh.riabtsev@uni-vechta.de>
+Date:   Tue Nov 10 13:01:43 2026 +0100
+
+    Autocommit: 10.11.2026 13:01:43,72
+
+ daad_full_harvest.py                         | 205 [32m++++++++++++++[m
+ src/pycognition/engine/skill_crystallizer.py | 389 [32m++++++++[m[31m-------------------[m
+ src/pycognition/schemas.py                   | 181 [32m++++++++[m[31m-----[m
+ tests/unit/test_skill_regression.py          |  49 [32m++++[m
+ 4 files changed, 478 insertions(+), 346 deletions(-)
