@@ -1,5 +1,5 @@
 <!-- File: docs/paper_part3_imrad.md -->
-<!-- Version: 1.3.0 | Release Date: 2026-11-17 -->
+<!-- Version: 1.3.1 | Release Date: 2026-11-17 -->
 
 # Temporal Event Graphs and Longitudinal Episodic Memory in Dual-Tier Neuro-Symbolic Agents: Cross-Source Entity Resolution and Proactive Multi-Horizon Orchestration
 
@@ -12,6 +12,7 @@
 **Date:** November 17, 2026  
 **Framework Version:** PyCognition v1.3.0  
 **Related Software Artifact:** Grant Harvester v2.2.0 (`DOI: 10.5281/zenodo.24106395`)  
+**Repository:** [https://github.com/MasterUaKi/pycognition](https://github.com/MasterUaKi/pycognition)  
 **License:** Creative Commons Attribution 4.0 International (CC-BY-4.0)
 
 ---
@@ -28,10 +29,10 @@ In this paper, we introduce **PyCognition v1.3.0**, extending our neuro-symbolic
 
 ## 1. Introduction
 
-Autonomous intelligence agents deployed for continuous domain monitoring—such as academic funding intelligence, regulatory tracking, and scholarly repository synchronization—must reason not merely over static pages, but over **evolving real-world entities across time** [1, 2]. In the preceding phases of the **PyCognition** research program, we addressed two foundational bottlenecks of dual-process cognitive architectures [3]:
+Autonomous intelligence agents deployed for continuous domain monitoring—such as academic funding intelligence, regulatory tracking, and scholarly repository synchronization—must reason not merely over static pages, but over **evolving real-world entities across time** [1, 2]. In the preceding phases of the **PyCognition** research program (`v1.0.0` and `v1.2.0`) [12], we addressed two foundational bottlenecks of dual-process cognitive architectures [3]:
 
-1. **Computational Amortization (Part I, v1.0.0) [4]:** Compiling repetitive algorithmic intents from System 2 reasoning into sub-millisecond System 1 Python subroutines, achieving $11,326.7\times$ marginal latency speedups.
-2. **Structural Resilience (Part II, v1.2.0) [5]:** Replacing data-level *toxic micro-compensation* with telemetry-driven AST-audited skill refactoring (`TelemetryEvaluator`, `SkillCapability`, `SkillCrystallizer`), eliminating database poisoning and reducing LLM calls by 94.0% on the `WebDrift-Fault-50` benchmark.
+1. **Computational Amortization (Part I, `v1.0.0`):** Compiling repetitive algorithmic intents from System 2 reasoning into sub-millisecond System 1 Python subroutines, achieving $11,326.7\times$ marginal latency speedups.
+2. **Structural Resilience (Part II, `v1.2.0`):** Replacing data-level *toxic micro-compensation* with telemetry-driven AST-audited skill refactoring (`TelemetryEvaluator`, `SkillCapability`, `SkillCrystallizer`), eliminating database poisoning and reducing LLM calls by 94.0% on the `WebDrift-Fault-50` benchmark.
 
 ### 1.1 Limitations of Stateless Snapshot Harvesting
 
@@ -48,7 +49,7 @@ To endow neuro-symbolic agents with longitudinal episodic memory and proactive a
 1. **Bitemporal Event Graph (`TemporalEventGraph`):** A SQLite-backed graph separating real-world validity time (`valid_time`) from ingestion time (`transaction_time`), representing entities as consolidated `EntityNode` instances connected by immutable `StateTransitionEdge` deltas.
 2. **Dual-Tier Neuro-Symbolic Entity Resolution (`NeuroSymbolicEntityResolver`):** A hybrid matcher combining token Jaccard, character bigram Dice, and uppercase institutional acronym blocking anchors (`System 1`) with one-time `System 2` semantic arbitration inside a calibrated gray zone $[0.42, 0.90)$, permanently crystallizing decisions in `AliasMemoryStore`.
 3. **Proactive Multi-Horizon Planner (`ProactiveHorizonPlanner`):** A policy-driven scheduler mapping graph transitions into deduplicated actions across immediate (`H1`, 0–24 h), tactical (`H2`, 1–14 d), and strategic (`H3`, 14+ d) horizons.
-4. **Open Benchmark (`ChronoDrift-Entity-60`) & Production Validation:** Empirical evaluation across 60 longitudinal scenarios and a live 1,230-record repository (*Grant Harvester v2.2.0*).
+4. **Open Benchmark (`ChronoDrift-Entity-60`) & Production Validation:** Empirical evaluation across 60 longitudinal scenarios and a live 1,230-record repository (*Grant Harvester v2.2.0* [13]).
 
 ---
 
@@ -56,11 +57,11 @@ To endow neuro-symbolic agents with longitudinal episodic memory and proactive a
 
 ### 2.1 Episodic Memory and Temporal Knowledge Graphs in LLM Agents
 
-Long-term memory architectures for autonomous agents—such as Generative Agents [6], MemGPT [7], and Zep [8]—highlight the necessity of structuring historical observations beyond flat context windows. Temporal Knowledge Graphs (TKGs) formalize evolving facts as quadruples $(s, r, o, t)$ [9], while bitemporal data models [10] distinguish when an event occurred in the external world (`valid_time`) from when the system recorded it (`transaction_time`). PyCognition v1.3.0 adapts bitemporal event modeling specifically for dual-process agents: rather than invoking an LLM to summarize every historical state, deterministic state-transition rules compute field-level deltas in sub-millisecond time while delegating only ambiguous cross-source identity resolution to System 2.
+Long-term memory architectures for autonomous agents—such as Generative Agents [4], MemGPT [5], and Zep [6]—highlight the necessity of structuring historical observations beyond flat context windows. Temporal Knowledge Graphs (TKGs) formalize evolving facts as quadruples $(s, r, o, t)$ [7], while bitemporal data models [8] distinguish when an event occurred in the external world (`valid_time`) from when the system recorded it (`transaction_time`). PyCognition v1.3.0 adapts bitemporal event modeling specifically for dual-process agents: rather than invoking an LLM to summarize every historical state, deterministic state-transition rules compute field-level deltas in sub-millisecond time while delegating only ambiguous cross-source identity resolution to System 2.
 
 ### 2.2 Neuro-Symbolic Entity Resolution
 
-Entity Resolution (ER) traditionally relies on blocking keys followed by pairwise similarity scoring or fine-tuned cross-encoders [11]. Recent LLM-based ER frameworks (e.g., Narayan et al. [12]) achieve high zero-shot accuracy on multilingual and noisy text pairs, but incur $O(N^2)$ or $O(N \cdot B)$ API calls across recurring batch runs. By coupling deterministic blocking anchors (`_extract_acronyms`) with a persistent positive/negative decision cache (`AliasMemoryStore`), PyCognition amortizes System 2 semantic judgments to strictly **one call per novel alias pair** across the entire operational lifetime of the system.
+Entity Resolution (ER) builds on probabilistic record linkage theory [9], traditionally combining blocking keys with pairwise similarity scoring or fine-tuned cross-encoders [10]. Recent LLM-based ER frameworks (e.g., Narayan et al. [11]) achieve high zero-shot accuracy on multilingual and noisy text pairs, but incur $O(N^2)$ or $O(N \cdot B)$ API calls across recurring batch runs. By coupling deterministic blocking anchors (`_extract_acronyms`) with a persistent positive/negative decision cache (`AliasMemoryStore`), PyCognition amortizes System 2 semantic judgments to strictly **one call per novel alias pair** across the entire operational lifetime of the system.
 
 ---
 
@@ -106,9 +107,9 @@ Given an incoming observation $o_t$ with title $T_a$, deadline $D_a$, and fundin
 
 1. **Tier 0 — Crystallized Alias Cache (`CACHE_HIT`):** If $\sigma(T_a)$ exists in `AliasMemoryStore`, the cached `canonical_id` is returned immediately in $O(1)$ SQLite lookup time with zero LLM tokens.
 2. **Tier 1 — Hybrid Lexical & Institutional Blocking Score:** For uncached titles, System 1 computes similarity against existing node aliases $T_b$:
-   $$S(a, b) = \min\Big(1.0,\; 0.55 \cdot J(W_a, W_b) + 0.45 \cdot \text{Dice}(B_a, B_b) + \beta_{\text{inst}}(a, b) + \beta_{\text{dl}}(a, b)\Big)$$
-   where $J$ is token Jaccard similarity, $\text{Dice}$ is character bigram similarity, $\beta_{\text{inst}} = 0.14$ if uppercase institutional acronyms ($\ge 3$ chars, e.g., `DFG`, `ERC`, `DAAD`, `BMBF`) or normalized funder names match, and $\beta_{\text{dl}} = 0.08$ if ISO-8601 deadlines align. Pairs with $S \ge 0.90$ merge deterministically (`SYSTEM1_LEXICAL`), while pairs with $S < 0.42$ register as distinct entities (`SYSTEM1_DISTINCT`).
-3. **Tier 2 — Gray-Zone System 2 Arbitration (`SYSTEM2_SEMANTIC`):** Only pairs satisfying $0.42 \le S(a, b) < 0.90$ (and not previously recorded in `negative_pairs`) are forwarded to `semantic_arbiter`. Positive matches bind $\sigma(T_a) \mapsto \text{canonical\_id}$ in `alias_mappings`; negative verdicts persist $(\sigma(T_a), \sigma(T_b))$ in `negative_pairs` so distinct tracks from the same agency (e.g., *ERC Starting Grant* vs. *ERC Synergy Grant*) are never re-queried.
+   $$S(a, b) = \min\Big(1.0,\; 0.55 \cdot J(W_a, W_b) + 0.45 \cdot \mathrm{Dice}(B_a, B_b) + \beta_{\mathrm{inst}}(a, b) + \beta_{\mathrm{dl}}(a, b)\Big)$$
+   where $J$ is token Jaccard similarity, $\mathrm{Dice}$ is character bigram similarity, $\beta_{\mathrm{inst}} = 0.14$ if uppercase institutional acronyms ($\ge 3$ chars, e.g., `DFG`, `ERC`, `DAAD`, `BMBF`) or normalized funder names match, and $\beta_{\mathrm{dl}} = 0.08$ if ISO-8601 deadlines align. Pairs with $S \ge 0.90$ merge deterministically (`SYSTEM1_LEXICAL`), while pairs with $S < 0.42$ register as distinct entities (`SYSTEM1_DISTINCT`).
+3. **Tier 2 — Gray-Zone System 2 Arbitration (`SYSTEM2_SEMANTIC`):** Only pairs satisfying $0.42 \le S(a, b) < 0.90$ (and not previously recorded in `negative_pairs`) are forwarded to `semantic_arbiter`. Positive matches bind $\sigma(T_a) \mapsto \mathrm{id}_{\mathrm{can}}$ (persisted as `canonical_id` in `alias_mappings`); negative verdicts persist $(\sigma(T_a), \sigma(T_b))$ in `negative_pairs` so distinct tracks from the same agency (e.g., *ERC Starting Grant* vs. *ERC Synergy Grant*) are never re-queried.
 
 ### 3.2 Bitemporal Event Graph & Lifecycle State Machine
 
@@ -116,9 +117,9 @@ Given an incoming observation $o_t$ with title $T_a$, deadline $D_a$, and fundin
 
 Upon ingesting `EntityObservation(canonical_id, source_id, raw_uri, title, attributes, deadline_iso, valid_time, transaction_time)`, the graph evaluates field-level deltas and emits an immutable `StateTransitionEdge`:
 
-* **Reopening (`STATUS_REOPENED`):** Triggered when a node in `EXPIRED` or `ARCHIVED` state is re-observed with a future deadline ($D_{\text{new}} > t_{\text{valid}}$).
-* **Deadline Shifts (`DEADLINE_EXTENDED` / `DEADLINE_SHORTENED`):** Triggered when $D_{\text{new}} > D_{\text{old}}$ or $D_{\text{new}} < D_{\text{old}}$.
-* **Horizon Thresholds (`STATUS_EXPIRING_SOON` / `STATUS_EXPIRED`):** Triggered either during ingestion or autonomously via `sweep_temporal_horizons(reference_time, expiring_window_days=14)` when $0 \le D - t_{\text{ref}} \le 14\text{ days}$ or $D < t_{\text{ref}}$.
+* **Reopening (`STATUS_REOPENED`):** Triggered when a node in `EXPIRED` or `ARCHIVED` state is re-observed with a future deadline ($D_{\mathrm{new}} > t_{\mathrm{valid}}$).
+* **Deadline Shifts (`DEADLINE_EXTENDED` / `DEADLINE_SHORTENED`):** Triggered when $D_{\mathrm{new}} > D_{\mathrm{old}}$ or $D_{\mathrm{new}} < D_{\mathrm{old}}$.
+* **Horizon Thresholds (`STATUS_EXPIRING_SOON` / `STATUS_EXPIRED`):** Triggered either during ingestion or autonomously via `sweep_temporal_horizons(reference_time, expiring_window_days=14)` when $0 \le D - t_{\mathrm{ref}} \le 14\;\mathrm{days}$ or $D < t_{\mathrm{ref}}$.
 * **Cross-Source Consolidation (`ALIAS_MERGED`):** Triggered when a newly resolved alias or secondary portal URI attaches to an existing canonical node.
 
 ### 3.3 Proactive Multi-Horizon Action Planning
@@ -168,7 +169,7 @@ We compared four architectures across all 360 temporal observations:
 
 ### 4.2 Production Case Study: *Grant Harvester v2.2.0* (1,230 Live Portal Records)
 
-We integrated `pycognition.temporal` into **Grant Harvester v2.2.0** and executed a two-pass synchronization over the live 24-portal SQLite vault (`grants_vault.db`, **1,230 active records**):
+We integrated `pycognition.temporal` into **Grant Harvester v2.2.0** [13] and executed a two-pass synchronization over the live 24-portal SQLite vault (`grants_vault.db`, **1,230 active records**):
 
 | Metric | Cold Synchronization Pass (Run 1) | Warm Synchronization Pass (Run 2) | Improvement / Delta |
 | :--- | :---: | :---: | :---: |
@@ -198,18 +199,40 @@ We presented **PyCognition v1.3.0**, completing a three-stage neuro-symbolic arc
 
 ---
 
+## Data and Code Availability
+
+All source code, benchmark generators, datasets, and reproduction harnesses are publicly available under open licenses:
+
+* **PyCognition Framework (`v1.3.0`, LGPL-3.0-or-later):** [https://github.com/MasterUaKi/pycognition](https://github.com/MasterUaKi/pycognition)
+* **ChronoDrift-Entity-60 Dataset & Runner:** `benchmarks/chronodrift_entity_60.json`, `benchmarks/generate_chronodrift_60.py`, and `benchmarks/run_temporal_benchmark.py` in the PyCognition repository.
+* **Grant Harvester Production Archive:** [https://doi.org/10.5281/zenodo.24106395](https://doi.org/10.5281/zenodo.24106395)
+
+---
+
 ## References
 
-[1] S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. Narasimhan, and Y. Cao, "ReAct: Synergizing Reasoning and Acting in Language Models," in *Proc. Int. Conf. Learning Representations (ICLR)*, 2023.  
-[2] G. Wang, Y. Xie, Y. Jiang, A. Mandlekar, C. Xiao, Y. Zhu, L. Fan, and A. Anandkumar, "Voyager: An Open-Ended Embodied Agent with Large Language Models," *Trans. Machine Learning Research (TMLR)*, 2023.  
-[3] D. Kahneman, *Thinking, Fast and Slow*. New York, NY, USA: Farrar, Straus and Giroux, 2011.  
-[4] O. Riabtsev, "pycognition: A Dual-Process Cognitive Architecture Integrating Deterministic Procedural Execution and Deliberative LLM Synthesis," *Zenodo Preprint*, Nov. 2026. doi: 10.5281/zenodo.10000000.  
-[5] O. Riabtsev, "Telemetry-Driven Skill Refactoring and Capability-Scoped Sandboxing in Dual-Tier Neuro-Symbolic Agents: Preventing Toxic Micro-Compensation in Open Web Environments," *Zenodo Preprint*, Nov. 2026.  
-[6] J. S. Park, J. O'Brien, C. J. Cai, M. R. Morris, P. Liang, and M. S. Bernstein, "Generative Agents: Interactive Simulacra of Human Behavior," in *Proc. 36th Annual ACM Symp. User Interface Software and Technology (UIST)*, pp. 1–22, 2023. doi: 10.1145/3586183.3606763.  
-[7] C. Packer, S. Wooders, K. Lin, V. Fang, S. G. Patil, I. Stoica, and J. E. Gonzalez, "MemGPT: Towards LLMs as Operating Systems," *arXiv preprint arXiv:2310.08560*, 2023.  
-[8] P. Rasmussen et al., "Zep: A Temporal Knowledge Graph Architecture for Agent Memory," *arXiv preprint arXiv:2501.13956*, 2025.  
-[9] B. Cai, Y. Xiang, L. Gao, H. Zhang, Y. Li, and J. Li, "Temporal Knowledge Graph Completion: A Survey," in *Proc. Int. Joint Conf. Artificial Intelligence (IJCAI)*, pp. 6545–6553, 2023.  
-[10] R. T. Snodgrass and I. Ahn, "Temporal Databases," *IEEE Computer*, vol. 19, no. 9, pp. 35–42, 1986.  
-[11] Y. Li, J. Li, Y. Suhara, A. Doan, and W.-C. Tan, "Deep Entity Matching with Pre-Trained Language Models," *Proc. VLDB Endowment*, vol. 14, no. 1, pp. 50–60, 2020.  
-[12] A. Narayan, I. Chami, L. Orr, and C. Ré, "Can Foundation Models Wrangle Your Data?," *Proc. VLDB Endowment*, vol. 16, no. 4, pp. 738–746, 2022.  
-[13] O. Riabtsev, "Grant Harvester: Autonomous Academic Funding Monitoring Framework with Cognitive Multi-Tier Reflection," *Zenodo Software Archive*, Nov. 2026. doi: 10.5281/zenodo.24106395.
+[1] S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. Narasimhan, and Y. Cao, "ReAct: Synergizing Reasoning and Acting in Language Models," in *Proc. 11th Int. Conf. Learning Representations (ICLR)*, Kigali, Rwanda, May 2023. Available: [https://arxiv.org/abs/2210.03629](https://arxiv.org/abs/2210.03629)
+
+[2] G. Wang, Y. Xie, Y. Jiang, A. Mandlekar, C. Xiao, Y. Zhu, L. Fan, and A. Anandkumar, "Voyager: An Open-Ended Embodied Agent with Large Language Models," *Transactions on Machine Learning Research (TMLR)*, 2024. Available: [https://arxiv.org/abs/2305.16291](https://arxiv.org/abs/2305.16291)
+
+[3] D. Kahneman, *Thinking, Fast and Slow*. New York, NY, USA: Farrar, Straus and Giroux, 2011.
+
+[4] J. S. Park, J. O'Brien, C. J. Cai, M. R. Morris, P. Liang, and M. S. Bernstein, "Generative Agents: Interactive Simulacra of Human Behavior," in *Proc. 36th Annual ACM Symp. User Interface Software and Technology (UIST)*, San Francisco, CA, USA, Oct. 2023, Art. no. 2, pp. 1–22. doi: [10.1145/3586183.3606763](https://doi.org/10.1145/3586183.3606763).
+
+[5] C. Packer, S. Wooders, K. Lin, V. Fang, S. G. Patil, I. Stoica, and J. E. Gonzalez, "MemGPT: Towards LLMs as Operating Systems," *arXiv preprint arXiv:2310.08560*, Oct. 2023. Available: [https://arxiv.org/abs/2310.08560](https://arxiv.org/abs/2310.08560)
+
+[6] P. Rasmussen, P. Paliychuk, T. Beauvais, J. Ryan, and D. Chalef, "Zep: A Temporal Knowledge Graph Architecture for Agent Memory," *arXiv preprint arXiv:2501.13956*, Jan. 2025. Available: [https://arxiv.org/abs/2501.13956](https://arxiv.org/abs/2501.13956)
+
+[7] B. Cai, Y. Xiang, L. Gao, H. Zhang, Y. Li, and J. Li, "Temporal Knowledge Graph Completion: A Survey," in *Proc. 32nd Int. Joint Conf. Artificial Intelligence (IJCAI)*, Macao, SAR, China, Aug. 2023, pp. 6545–6553. doi: [10.24963/ijcai.2023/734](https://doi.org/10.24963/ijcai.2023/734).
+
+[8] R. T. Snodgrass and I. Ahn, "Temporal Databases," *IEEE Computer*, vol. 19, no. 9, pp. 35–42, Sep. 1986. doi: [10.1109/MC.1986.1663327](https://doi.org/10.1109/MC.1986.1663327).
+
+[9] I. P. Fellegi and A. B. Sunter, "A Theory for Record Linkage," *Journal of the American Statistical Association*, vol. 64, no. 328, pp. 1183–1210, Dec. 1969. doi: [10.1080/01621459.1969.10501049](https://doi.org/10.1080/01621459.1969.10501049).
+
+[10] Y. Li, J. Li, Y. Suhara, A. Doan, and W.-C. Tan, "Deep Entity Matching with Pre-Trained Language Models," *Proceedings of the VLDB Endowment*, vol. 14, no. 1, pp. 50–60, Sep. 2020. doi: [10.14778/3421424.3421431](https://doi.org/10.14778/3421424.3421431).
+
+[11] A. Narayan, I. Chami, L. Orr, and C. Ré, "Can Foundation Models Wrangle Your Data?," *Proceedings of the VLDB Endowment*, vol. 16, no. 4, pp. 738–746, Dec. 2022. doi: [10.14778/3574245.3574258](https://doi.org/10.14778/3574245.3574258).
+
+[12] O. Riabtsev, "PyCognition: Dual-Tier Neuro-Symbolic Cognitive Orchestration Framework with Telemetry-Driven Skill Refactoring and Bitemporal Event Graphs (v1.0.0–v1.3.0)," *GitHub Software Repository*, Nov. 2026. Available: [https://github.com/MasterUaKi/pycognition](https://github.com/MasterUaKi/pycognition)
+
+[13] O. Riabtsev, "Grant Harvester: Autonomous Academic Funding Monitoring Framework with Cognitive Multi-Tier Reflection," *Zenodo Software Archive*, Nov. 2026. doi: [10.5281/zenodo.24106395](https://doi.org/10.5281/zenodo.24106395).
